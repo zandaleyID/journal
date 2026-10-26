@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multimodal Journal</title>
+<meta name="description" content="A multimodal reflective journal on learning with media, with accessibility tools built in.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:wght@600;700&family=Figtree:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip" href="#content">Skip to the journal entry</a>
+
+<header class="topbar">
+  <button id="menuBtn" class="icon-btn menu-btn" aria-expanded="false" aria-controls="sidebar">
+    <span aria-hidden="true">☰</span><span class="sr">Journal contents</span>
+  </button>
+  <div class="brand">
+    <span class="brand-title">Multimodal Journal</span>
+    <span class="brand-sub">Multimodal Content for Online Learning</span>
+  </div>
+  <button id="a11yBtn" class="pill-btn" aria-expanded="false" aria-controls="a11y">Accessibility</button>
+</header>
+
+<section id="a11y" class="a11y" aria-label="Accessibility settings" hidden>
+  <div class="a11y-grid">
+    <fieldset>
+      <legend>Listen</legend>
+      <div class="row">
+        <button id="aPlay" class="btn">Play</button>
+        <button id="aStop" class="btn ghost">Stop</button>
+      </div>
+      <label>Speed
+        <select id="aRate">
+          <option value="0.8">Slower</option>
+          <option value="1" selected>Normal</option>
+          <option value="1.25">Faster</option>
+          <option value="1.5">Fastest</option>
+        </select>
+      </label>
+      <label>Voice <select id="aVoice"><option value="">Default voice</option></select></label>
+      <p class="hint" id="aHint"></p>
+    </fieldset>
+    <fieldset>
+      <legend>Reading</legend>
+      <div class="row">
+        <button id="aSmaller" class="btn ghost" aria-label="Smaller text">A−</button>
+        <button id="aReset" class="btn ghost">Reset</button>
+        <button id="aLarger" class="btn ghost" aria-label="Larger text">A+</button>
+      </div>
+      <label class="check"><input type="checkbox" id="aFont"> Easier-to-read font</label>
+      <label class="check"><input type="checkbox" id="aSpacing"> Wider line spacing</label>
+    </fieldset>
+    <fieldset>
+      <legend>Display</legend>
+      <label>Theme
+        <select id="aTheme">
+          <option value="auto">Match my device</option>
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="hc">High contrast</option>
+        </select>
+      </label>
+      <label class="check"><input type="checkbox" id="aMotion"> Pause animations</label>
+    </fieldset>
+  </div>
+</section>
+
+<div class="layout">
+  <nav id="sidebar" class="sidebar" aria-label="Journal contents">
+    <p class="side-label">Journal contents</p>
+    <ol id="entryList" class="entry-list"></ol>
+  </nav>
+  <div id="scrim" class="scrim" hidden></div>
+
+  <main id="main" class="main">
+    <div class="pagebar" id="pagebar">
+      <p id="crumb" class="crumb"></p>
+      <div class="row">
+        <button id="listenBtn" class="btn">Listen to this entry</button>
+      </div>
+    </div>
+    <article id="content" class="content" tabindex="-1" aria-live="polite"></article>
+    <nav class="pager" aria-label="Entry navigation">
+      <a id="prevLink" class="btn ghost" href="#" hidden></a>
+      <a id="nextLink" class="btn" href="#" hidden></a>
+    </nav>
+    <footer class="foot">Multimodal reflective journal. Built to be read, listened to and explored.</footer>
+  </main>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
