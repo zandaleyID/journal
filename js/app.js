@@ -50,7 +50,7 @@
   }
 
   /* ---------- reading the plain-text files ---------- */
-  var KEYS = { title: 1, number: 1, subtitle: 1, date: 1, banner: 1, "banner-alt": 1, "banner-caption": 1, "banner-everywhere": 1, footer: 1,
+  var KEYS = { title: 1, "short-title": 1, number: 1, subtitle: 1, date: 1, banner: 1, "banner-alt": 1, "banner-caption": 1, "banner-everywhere": 1, footer: 1,
     author: 1, image: 1, still: 1, alt: 1, caption: 1, description: 1, transcript: 1, url: 1, size: 1, file: 1, captions: 1, poster: 1,
     text: 1, reply: 1, heading: 1 };
 
@@ -201,7 +201,7 @@
       var n = e.meta.number || "", li = document.createElement("li"), a = document.createElement("a");
       a.href = "#/" + e.id; a.dataset.id = e.id;
       a.innerHTML = '<span class="num" aria-hidden="true">' + (n ? esc(n) : "⌂") + '</span><span>' +
-        (n ? '<span class="sr">Entry ' + esc(n) + ": </span>" : "") + esc(e.meta.title || e.id) + "</span>";
+        (n ? '<span class="sr">Entry ' + esc(n) + ": </span>" : "") + esc(e.meta["short-title"] || e.meta.title || e.id) + "</span>";
       li.appendChild(a); list.appendChild(li);
     });
   }
@@ -257,7 +257,7 @@
 
   function updatePager() {
     var i = currentIndex(), p = $("prevLink"), n = $("nextLink");
-    function nm(x) { return (x.meta.title || x.id); }
+    function nm(x) { return (x.meta["short-title"] || x.meta.title || x.id); }
     if (i > 0) { p.hidden = false; p.href = "#/" + ENTRIES[i - 1].id; p.textContent = "← Previous: " + nm(ENTRIES[i - 1]); } else p.hidden = true;
     if (i < ENTRIES.length - 1) { n.hidden = false; n.href = "#/" + ENTRIES[i + 1].id; n.textContent = "Next: " + nm(ENTRIES[i + 1]) + " →"; } else n.hidden = true;
   }

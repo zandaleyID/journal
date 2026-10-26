@@ -30,6 +30,8 @@ HOW A FILE IS LAID OUT
   ---
   Your writing starts here.
 
+  short-title: A shorter name for the sidebar (optional)
+
   Only title is needed. Leave out any line you do not use.
 
 WRITING
