@@ -1,0 +1,44 @@
+title: The Affective Layer
+number: 4
+subtitle: Beyond CTML: How Media Affects Engagement and Understanding
+date: 27 August 2026
+banner: assets/banner-entry-4.jpg
+banner-alt: The word "Affect" in cut-out letters over a collage of faces, eyes and mouths showing different expressions, with scribbled red lines and curved printed text around them.
+banner-caption: Entry 4 banner (AnMark, 2024; Bothma, 2026).
+---
+I'm doing an online course, and an interactive activity asks for my own take on a core idea. It offers a voice function, and I'd much rather speak than type. Here's what happens:
+
+[embed]
+url: https://drive.google.com/file/d/1_FgL4CrzOgsoOWlP8LgyquSx9Tw1rQqm/view?usp=drive_link
+title: Lost in Transcription, a short animated video
+caption: Figure 1. "Lost in Transcription": a learner answers an AI tool's question via voice function. Created in Powtoon (Bothma, 2026).
+description: A learner answers an AI tool's question via voice function. The tool mishears them, asks them to repeat it, and mishears again, until the learner gives up out of frustration. The video is titled "Lost in Transcription" and runs for 54 seconds.
+[/embed]
+
+This frustration is what Moreno's Cognitive-Affective Theory of Learning with Media (CATLM) adds to the CTML critique I did for Assignment 1. Where CTML explains how we process multimedia information through dual channels, CATLM argues that motivation, emotion, and individual learner differences mediate how effectively that processing happens (Moreno, 2006). Looking back at the Coursera AI course I critiqued, when the voice recognition tool malfunctioned, my motivation to keep engaging with the AI dialogue dropped because the experience with the tool itself was frustrating. In CATLM terms, the tool's failure to recognise my voice was a barrier to engagement, not to understanding, which shows that a feature can fail a learner without the content being at fault (Moreno, 2006).
+
+The course's Critical Thinking Framework (CTF) presented the reverse problem: media missing rather than media distracting. It's a five-step process, but it was only ever explained through text and narrated video. Because it's sequential and spatial, a diagram with a worked example would have conveyed it more efficiently (Mayer, 2024). I finished the course unclear on what the CTF looked like in reality, and I suspect that gap carried into my confusion during the PPE later on. So I recreated it, with an AI decision of my own worked through each step:
+
+[figure]
+image: assets/ctf-in-practice.png
+alt: An infographic titled "The CTF in Practice" with the question "When an AI tool tells you what your sources say, how do you decide whether to believe it?" A winding road passes five numbered map pins: 1 Recognise Assumptions, 2 Question Evidence, 3 Justify, 4 Compare Perspectives and 5 Assess Consequences. Each pin has a guiding question and a short note on what I did. A banner at the bottom asks which step of the CTF comes most naturally to you.
+caption: Figure 2. The Critical Thinking Framework in practice, showing how I checked an AI inference against my sources (Bothma, 2026).
+description: Step 1, Recognise Assumptions ("What am I taking for granted?"): I assumed NotebookLM's inference completely matched my sources. Step 2, Question Evidence ("What do I actually know?"): I went back to the source text to see how it reached that inference. Step 3, Justify ("Why would this option work?"): I asked whether the text supports my argument for this assignment. Step 4, Compare Perspectives ("How do the options compare?"): I compared its reading, my reading and my discussion with Claude. Step 5, Assess Consequences ("What happens if I choose it?"): accepting it would weaken my argument, so I wrote a sharper prompt as a filter. The closing question reads: "Which step of the CTF comes most naturally to you?"
+[/figure]
+
+## Final thoughts
+The voice tool showed me that a frustrating experience can drain motivation even when the content is manageable, which is what CATLM adds to CTML. The AI course's CTF presented a sequential process through text alone, when a diagram would have made its structure clearer. In both instances, the way the media was designed affected how effectively learning could take place.
+
+[question]
+text: Has a frustrating tool ever put you off learning something you actually wanted to learn?
+reply: Thank you for sharing. A tool that gets in the way can cost more than time, because it can quietly cost motivation too.
+[/question]
+
+[references]
+Mayer, R.E., 2024. The past, present, and future of the cognitive theory of multimedia learning. *Educational Psychology Review*, [e-journal] 36(8). doi:10.1007/s10648-023-09842-1.
+Moreno, R., 2006. Learning in high-tech and multimedia environments. *Current Directions in Psychological Science*, 15(2), pp.63-67. doi:10.1111/j.0963-7214.2006.00408.x.
+[/references]
+
+[image-references]
+AnMark, 2024. *Emotions. Collage & Illustrations* [online graphic]. Available at: <https://creativemarket.com/anmark/14489384-Emotions.-Collage-Illustrations> [Accessed 19 October 2026].
+[/image-references]

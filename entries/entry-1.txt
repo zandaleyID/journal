@@ -1,0 +1,24 @@
+title: A Designer in the Making
+number: 1
+subtitle: Introduction
+---
+Over the course of this module, I've become increasingly interested in the creative side of this field. Instructional design is far more creative than it first appears. Creativity shapes every decision about how meaning gets communicated. Multimodality is where I see that most clearly. Choosing text, image, audio, video, or interaction isn't a neutral technical step. Each mode carries meaning differently, and learners read them differently, so every choice is a design judgement, beyond a simple formula (Kress et al., 2014).
+
+This journal's collage theme is intentional. Instructional design can seem like it's all rigid frameworks and models, but underneath that, it is a deeply iterative process. A collage works like multimodal design: separate pieces, each in its own mode, arranged and rearranged until together they make meaning. Layered, developing, and not fully resolved, reflects what this journal is: a record of expressions and reflections in progress. Nothing here is meant to be a final thought. It's me working through my own design identity, the same way I'd want any learner to have room to work through theirs.
+
+## Introduction video
+[video]
+file: video/introduction.mp4
+captions: video/introduction.vtt
+title: Introduction video: I introduce myself and this journal
+caption: Introduction video.
+transcript:
+[/video]
+
+[references]
+Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teaching and learning: The rhetorics of the science classroom*. [e-book] London: Routledge. Available at: <https://www.academia.edu/27773901/Multimodal_Teaching_and_Learning_The_Rhetorics_of_the_Science_Classroom> [Accessed 18 September 2026].
+[/references]
+
+[image-references]
+wrapito, 2026. *Retro Surreal Collage Pages: Mixed Media Junk Journal*. [digital image] Available at: <https://www.etsy.com/listing/4295424460/retro-surreal-collage-pages-mixed-media> [Accessed 11 August 2026].
+[/image-references]

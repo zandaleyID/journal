@@ -1,0 +1,7 @@
+title: Multimodal Journal
+subtitle: Multimodal Content for Online Learning
+banner: assets/banner-site.jpg
+banner-alt: A collage of vintage-style illustrations in teal, cream and red, including an eye, a woman's face partly covered by a cloud, butterflies, a guitar and a fish, with the words "a creative journey" in cut-out magazine letters across the centre.
+banner-caption: Journal cover (wrapito, 2026; Bothma, 2026).
+banner-everywhere: no
+footer: Multimodal reflective journal. Built to be read, listened to and explored.

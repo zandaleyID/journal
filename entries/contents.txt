@@ -1,0 +1,10 @@
+# The order of this list is the order of the sidebar.
+# One file name per line (without .txt). Lines starting with # are ignored.
+start
+entry-1
+entry-2
+entry-3
+entry-4
+entry-5
+entry-6
+entry-7

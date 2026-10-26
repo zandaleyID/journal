@@ -1,0 +1,28 @@
+title: Curate Before You Create
+number: 2
+subtitle: A Tool Demonstration & Orchestrating Content
+date: 11 August 2026
+banner: assets/banner-entry-2.jpg
+banner-alt: The word "orchestration" in cut-out magazine letters over an illustration of an orchestra seen from above. Musicians sit on exercise balls and play flutes, cellos and violins, and a conductor's raised arms appear at the lower right.
+banner-caption: Entry 2 banner (Pilates Encyclopedia, 2016; Bothma, 2026).
+---
+For my first task, a tool demonstration, I explored [Wakelet](https://wakelet.com/) (2014), a free curation tool that lets you gather links, images, videos, and notes into a collection and put them in a sequence. It definitely changed how I think about choosing tools for multimodal design. As a novice instructional designer, I'm still navigating the plethora of tools out there, so currently, orchestrating content feels more manageable than creating it from scratch.
+
+[embed]
+url: https://drive.google.com/file/d/1hfFENQVeYwatEWasBu7apOzpx-PkjPbk/view?usp=drive_link
+title: Wakelet tool demonstration video
+caption: Figure 1. Wakelet tool demonstration video.
+description: A recorded demonstration of Wakelet, the curation tool described above.
+[/embed]
+
+## Final thoughts
+Wakelet pushes one to think about sequencing: how to order and structure resources, guided by learning theories and ID models, so that a learner can move through them in a meaningful way. That's a skill I want to build, both professionally and personally. Its value lies in how thoughtfully you combine and sequence modes and resources, not in the fact that it can hold them all.
+
+[question]
+text: Is orchestrating content less creative than creating it, or just a different kind of creativity?
+reply: Thank you for sharing. Whichever way you lean, it is worth noticing how much of the thinking you had to do yourself.
+[/question]
+
+[image-references]
+Pilates Encyclopedia, 2016. *Symphony orchestra musicians playing instruments while seated on exercise balls*. [digital image] Available at: <https://www.pilatesencyclopedia.com/blog/imagine-an-orchestra-playing-a-symphony> [Accessed 11 August 2026].
+[/image-references]

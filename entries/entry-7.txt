@@ -1,0 +1,49 @@
+title: Does the Agent Earn Its Place?
+number: 7
+subtitle: Testing two decisions from my PP2 design against the theory.
+---
+Sessions 7 and 8 kept returning to one question: do the modes, activities and assessments actually work together, or is something in there just because it was available? I tested two of my PP2 decisions against it: the video comparison and the pedagogical agent.
+
+## The video comparison
+One learning outcome asks facilitators to tell apart a behaviourist, answer-checking response from a Socratic, guiding one. I used two videos for that, because the difference sits in tone, pacing and body language, which text cannot carry. This is what social semiotics describes: meaning is made across modes and changes when it moves between them (Kress et al., 2014). It also met the Session 7 criteria for choosing a mode. It serves the outcome, gives people new to the role something to model on, and shows what their real setting should look like. Facilitators then annotate the transcripts, which turns watching into analysing and gives them more than one way in.
+
+## The gap I found
+What I missed was accessibility. I chose video for the tone, pacing and body language, and a facilitator who cannot access the audio or visuals loses exactly those. The transcript gives the wording but none of the cues, and UDL’s principle of multiple means of representation (Ralabate, 2011) shows the gap. Adding stage directions such as “says slowly” would narrow it, but that describes the cue rather than carrying it, so it narrows the gap without closing it.
+
+Try it for yourself below. The same student question is answered in two ways, and you can choose how to access each answer.
+
+[embed]
+url: https://zandaleyid.github.io/format-cues/
+title: Same response, three ways: read with stage directions, listen, or watch
+size: mid
+caption: Figure 1. The same response, three ways. Choose a response, then read it with stage directions, listen to it, or watch it.
+description: A mock student says, “I wrote that the study proves social media causes anxiety. Is that right?” Two responses are offered. The answer-checking response, said flat and brisk, is: “No, that’s not right. One study can’t prove causation. Change ‘proves’ to ‘suggests’ and move on.” The Socratic response, said warmly with a pause, is: “Let’s look at the word ‘proves’. What would you need to see in the study to say that social media causes anxiety, rather than just being linked to it?” Reading with stage directions carries the wording and describes some tone and pacing, but not body language. Listening carries tone and pacing directly but not body language. Watching carries all of them.
+[/embed]
+
+## The agent
+In Unit 1 the agent is prominent, because that is where facilitators learn the platform through a guided walkthrough, and it is there to fill gaps the module cannot fill alone (Moreno and Mayer, 2007). In Units 2 to 4 it shrinks to a small icon, so facilitators know it is there but it is not front and centre. My main worry was behavioural: an always-prominent agent might become the answer to everything instead of an assistive tool.
+
+The theory supports caution. Extraneous features can use up limited working memory (Moreno and Flowerday, 2006, cited in Moreno and Mayer, 2007), interactivity can pull attention to seductive details (Renkl and Atkinson, 2007), and an engaging affordance can become a distraction when the learning context lacks structure (Day and Lloyd, 2007). None of these sources addresses an agent’s size, so applying them here is my own design judgement.
+
+[figure]
+image: assets/agent-mockup.png
+alt: Two screens side by side. In Unit 1 the pedagogical agent is large and prominent beside the walkthrough. In Units 2 to 4 the agent is a small icon in the corner.
+caption: Figure 2. The agent in Unit 1 (prominent) and in Units 2 to 4 (a small icon).
+description: The left screen shows Unit 1, where the agent guides facilitators through the platform and takes up a large part of the screen. The right screen shows a later unit, where the agent is a small icon in the corner that facilitators can open if they need it.
+[/figure]
+
+## What this changed
+I started with the agent throughout the whole module. Working through the theory showed me what that would cost, and the design is more considered for it. The theories pulled in different directions, but noticing the other direction is what showed me what was missing, whether that was the agent’s presence or the accessibility of my videos.
+
+[question]
+text: Think of a tool or assistant in an online course, such as a chatbot or a help button. Did it help you more when it was always visible, or when you could call on it only when you needed it?
+reply: Thank you for sharing. When help is there for the choosing, it can feel quite different from help that is always in the way.
+[/question]
+
+[references]
+Day, D. and Lloyd, M., 2007. Affordances of online technologies: More than the properties of the technology. *Australian Educational Computing*, [e-journal] 22(2), pp.17-21. Available at: <https://www.researchgate.net/publication/27476254_Affordances_of_online_technologies_More_than_the_properties_of_the_technology> [Accessed 20 September 2026].
+Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teaching and learning: The rhetorics of the science classroom*. [e-book] London: Routledge. Available at: <https://www.academia.edu/27773901/Multimodal_Teaching_and_Learning_The_Rhetorics_of_the_Science_Classroom> [Accessed 18 September 2026].
+Moreno, R. and Mayer, R., 2007. Interactive multimodal learning environments. *Educational Psychology Review*, [e-journal] 19(3), pp.309-326. doi:10.1007/s10648-007-9047-2.
+Ralabate, P.K., 2011. Universal Design for Learning: Meeting the needs of all students. *The ASHA Leader*, [e-journal] 16(10), pp.14-17. doi:10.1044/leader.FTR2.16102011.14.
+Renkl, A. and Atkinson, R.K., 2007. Interactive learning environments: Contemporary issues and challenges. *Educational Psychology Review*, [e-journal] 19(3), pp.235-238. doi:10.1007/s10648-007-9052-5.
+[/references]

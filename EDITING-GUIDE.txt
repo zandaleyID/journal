@@ -1,0 +1,117 @@
+HOW TO EDIT YOUR JOURNAL SITE (no coding needed)
+=================================================
+
+Everything you write lives in plain text files. Pictures and videos live in the assets and video folders.
+
+WHERE THINGS ARE
+  site.txt                  The site name, the big cover banner, the footer.
+  entries/contents.txt      The order of the sidebar. One file name per line.
+  entries/start.txt         The "Start here" page.
+  entries/entry-1.txt ...   One file per entry.
+  assets/                   Pictures, GIFs and banners.
+  video/                    Your videos and caption files.
+
+HOW TO CHANGE TEXT ON GITHUB
+  1. Open your repository on github.com and click the file (for example entries/entry-3.txt).
+  2. Click the pencil icon (Edit this file).
+  3. Change the text, then click "Commit changes" and "Commit changes" again.
+  4. Wait about a minute, then refresh your site (Ctrl+F5).
+
+HOW A FILE IS LAID OUT
+  The top of an entry file has its settings. A line with three dashes (---) ends the settings. Everything under it is your writing.
+
+  title: The Affective Layer
+  number: 4
+  subtitle: Beyond CTML: How Media Affects Engagement and Understanding
+  date: 27 August 2026
+  banner: assets/banner-entry-4.jpg
+  banner-alt: Describe the banner for people who cannot see it.
+  banner-caption: Entry 4 banner (AnMark, 2024; Bothma, 2026).
+  ---
+  Your writing starts here.
+
+  Only title is needed. Leave out any line you do not use.
+
+WRITING
+  Leave a blank line between paragraphs.
+  ## A heading                  (a smaller one: ### A smaller heading)
+  **bold**   *italic*   [link words](https://example.com)
+  - A bullet point
+  1. A numbered point
+  > A quotation
+
+  A web address typed on its own becomes a link by itself.
+
+PICTURES, GIFs AND CHARTS
+  [figure]
+  image: assets/my-picture.png
+  alt: What the picture shows, for people who cannot see it.
+  caption: Figure 1. A short caption with its citation (Author, 2026).
+  description: A longer text description. This appears under "Text description".
+  [/figure]
+
+  For an animated GIF, add a still version so people can pause it:
+  still: assets/my-gif-still.png
+
+  Always fill in alt. It is read aloud to people using a screen reader and by the Listen button.
+
+YOUR OWN VIDEO (uploaded to the video folder)
+  [video]
+  file: video/introduction.mp4
+  captions: video/introduction.vtt
+  title: Introduction video
+  caption: Introduction video.
+  transcript: Type what is said in the video here.
+  [/video]
+
+  Videos must be under 25 MB to upload through the GitHub website. Keep them to 720p. Captions are a .vtt file.
+
+A VIDEO ON GOOGLE DRIVE OR YOUTUBE, OR AN INTERACTIVE PAGE
+  [embed]
+  url: https://drive.google.com/file/d/XXXX/view?usp=drive_link
+  title: A short name for the video or page
+  caption: Figure 1. What it shows.
+  description: A text description or the transcript.
+  [/embed]
+
+  Paste the normal Google Drive "share" link or a YouTube link and the site converts it for you.
+  The Drive file must be shared as "Anyone with the link" or visitors will see a sign-in screen.
+  For one of your own pages (for example a GitHub Pages address) you can add:  size: tall   or   size: mid   or   size: short
+  Drive and YouTube links are sized as a video automatically.
+
+THE READER QUESTION
+  [question]
+  text: The question for your reader.
+  reply: The automated reply that appears when they press the button.
+  [/question]
+
+A TEXT BOX
+  [note]
+  Any text you want in a shaded box.
+  [/note]
+
+REFERENCES (put one reference on each line, no blank lines needed)
+  [references]
+  Mayer, R.E., 2024. The past ... *Educational Psychology Review*, 36(8).
+  [/references]
+
+  [image-references]
+  Author, 2026. *Title*. [digital image] Available at: <https://example.com> [Accessed 1 October 2026].
+  [/image-references]
+
+HOW TO ADD A NEW ENTRY
+  1. In GitHub choose Add file, then Create new file. Name it entries/entry-8.txt
+  2. Paste the layout above and write your entry. Commit it.
+  3. Open entries/contents.txt, click the pencil, and add a new line: entry-8
+  4. Commit. The entry appears in the sidebar.
+
+HOW TO CHANGE THE BANNERS
+  Site cover banner:   upload your image to the assets folder, then in site.txt change the banner: line to its name.
+  Entry banner:        upload the image to assets, then change the banner: line at the top of that entry's file.
+  If a banner file is missing, the page simply shows no banner.
+  To show a slim strip of the cover banner on every page, change   banner-everywhere: no   to   banner-everywhere: yes   in site.txt.
+
+IF SOMETHING LOOKS WRONG
+  Check that file names match exactly, including capital letters and the extension (.jpg and .png are different).
+  Image paths always start with assets/ and video paths with video/.
+  If the sidebar shows "(file not found)", the name in contents.txt does not match the file name.
