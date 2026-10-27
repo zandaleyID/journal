@@ -1,6 +1,9 @@
 title: A Designer in the Making
 number: 1
 subtitle: Introduction
+banner: assets/banner-entry-1.jpg
+banner-alt: The word "becoming" in cut-out magazine letters over a vintage-toned collage. Pale mannequin figures sit and stand on pink stepped terraces of grass, with sunflowers, orange butterflies and a moon around them, and a figure with butterfly wings sits at the upper right.
+banner-caption: Entry 1 banner (Samulska, 2026; Bothma, 2026).
 ---
 Over the course of this module, I've become increasingly interested in the creative side of this field. Instructional design is far more creative than it first appears. Creativity shapes every decision about how meaning gets communicated. Multimodality is where I see that most clearly. Choosing text, image, audio, video, or interaction isn't a neutral technical step. Each mode carries meaning differently, and learners read them differently, so every choice is a design judgement, beyond a simple formula (Kress et al., 2014).
 
@@ -20,5 +23,6 @@ Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teachin
 [/references]
 
 [image-references]
+Samulska, A., 2026. *The Feeling You Get (Empire of the Sun)*. [digital image] Dribbble. Available at: <https://dribbble.com/shots/26814370-The-Feeling-You-Get-Empire-of-the-Sun> [Accessed 27 October 2026].
 wrapito, 2026. *Retro Surreal Collage Pages: Mixed Media Junk Journal*. [digital image] Available at: <https://www.etsy.com/listing/4295424460/retro-surreal-collage-pages-mixed-media> [Accessed 11 August 2026].
 [/image-references]

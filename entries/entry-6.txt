@@ -1,6 +1,9 @@
 title: When Cutting Load Cuts Access
 number: 6
 subtitle: Where cognitive load theory and Universal Design for Learning pull in different directions.
+banner: assets/banner-entry-6.jpg
+banner-alt: The word "tension" in cut-out magazine letters over a pale blue background. Two giant hands, one from each side, pull a blue rope with an orange cloth tied at its middle. A woman in an orange dress sits on the left hand and a man in an orange shirt sits on the right hand, each working on a laptop.
+banner-caption: Entry 6 banner (SvetaZi, 2022; Bothma, 2026).
 ---
 CTML and CATLM are mostly about managing cognitive load. UDL starts from a different question, which is who can get in and how (CAST, 2024). Putting the three side by side showed me that they do not always agree. Three tensions stood out: redundancy versus multiple representation, coherence versus engagement, and efficiency versus choice.
 
@@ -46,3 +49,7 @@ Moreno, R. and Mayer, R., 2007. Interactive multimodal learning environments. *E
 Ralabate, P.K., 2011. Universal Design for Learning: Meeting the needs of all students. *The ASHA Leader*, [e-journal] 16(10), pp.14-17. doi:10.1044/leader.FTR2.16102011.14.
 Vendrell, M. and Johnston, S.K., 2026. Scaffolding critical thinking with generative AI: Design principles for integrating large language models in higher education. *Computers and Education: Artificial Intelligence*, [e-journal]. doi:10.1016/j.caeai.2026.100572.
 [/references]
+
+[image-references]
+SvetaZi, 2022. *Competition between a man and a woman: gender equality*. [digital image] iStockphoto. Available at: <https://www.istockphoto.com/photo/competition-between-a-man-and-a-woman-gm1393623109-449399293> [Accessed 27 October 2026].
+[/image-references]

@@ -1,6 +1,9 @@
 title: From Ideal Design to Workable Design
 number: 5
 subtitle: Universal Design for Learning, and what happened to my ideas when they met real constraints.
+banner: assets/banner-entry-5.jpg
+banner-alt: The word "constraints" in cut-out magazine letters over a collage of green and blue watercolour mountains. A blue and gold macaw is caught inside a large domed metal birdcage in the centre, while a swallow, a bee with feathered wings, a sun, blue butterflies and a flying saucer sit outside it.
+banner-caption: Entry 5 banner (Bothma, 2026).
 ---
 CoTrace is my conceptual AI learning platform, built on generativist pedagogy and structured around three phases: Explore, Draft and Refine. My Practical Project 2 proposes an orientation programme for newly appointed CoTrace facilitators. This entry began before that proposal was finalised, so some early ideas below differ from what I submitted, and I have kept them to show how my thinking changed. My learner analysis showed three gaps in facilitators, and I wanted to see how Universal Design for Learning (UDL) could close them.
 
