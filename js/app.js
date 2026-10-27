@@ -227,9 +227,10 @@
 
   function bannerHtml(e, isFirst) {
     var m = e.meta, src = m.banner, alt = m["banner-alt"], cap = m["banner-caption"];
-    if (!src && isFirst && SITE.banner) { src = SITE.banner; alt = SITE["banner-alt"]; cap = SITE["banner-caption"]; }
+    var cover = false;
+    if (!src && isFirst && SITE.banner) { src = SITE.banner; alt = SITE["banner-alt"]; cap = SITE["banner-caption"]; cover = true; }
     if (!src) return "";
-    return '<figure class="banner"><img src="' + esc(src) + '" alt="' + esc(alt || "") + '">' + (cap ? '<figcaption class="credit">' + inline(cap) + "</figcaption>" : "") + "</figure>";
+    return '<figure class="banner' + (cover ? " cover" : "") + '"><img src="' + esc(src) + '" alt="' + esc(alt || "") + '">' + (cap ? '<figcaption class="credit">' + inline(cap) + "</figcaption>" : "") + "</figure>";
   }
 
   function load(e, idx, initial) {
