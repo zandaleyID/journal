@@ -173,5 +173,5 @@ details p { margin: .5em 0 .2em; }
 .embed.cards { height: 540px; }
 @media (max-width: 660px) { .embed.cards { height: 1260px; } }
 
-.embed.road { height: 1000px; }
-@media (max-width: 660px) { .embed.road { height: 700px; } }
+.embed.road { height: 960px; }
+@media (max-width: 660px) { .embed.road { height: 620px; } }

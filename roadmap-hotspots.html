@@ -23,44 +23,50 @@ svg{display:block;width:100%;max-width:1100px;height:auto;margin:0 auto}
 .num[aria-pressed=true]{outline:3px solid var(--amber);outline-offset:2px}
 .tools .sep{width:8px}
 button:focus-visible{outline:3px solid #1a73e8;outline-offset:3px}
-.panel{max-width:760px;margin:0 auto;background:#fff;border:3px solid var(--navy);border-radius:14px;padding:14px 18px;min-height:128px}
-.panel.a{border-color:var(--p)}.panel.b{border-color:var(--t)}
-.lane{font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:0 0 4px}
-.panel.a .lane{color:var(--p)}.panel.b .lane{color:var(--t)}
-.step{font-size:1.2rem;font-weight:800;margin:0 0 6px;line-height:1.25}
-.more{font-size:.95rem;margin:0;line-height:1.45}
-.match{font-style:italic;font-size:.92rem;margin:8px 0 0}
+.wrap{position:relative;max-width:1100px;margin:0 auto}
+.pop{position:absolute;z-index:5;width:min(340px,90%);background:#fff;border:3px solid var(--navy);border-radius:14px;padding:12px 38px 12px 14px;box-shadow:0 10px 24px rgba(11,33,79,.3)}
+.pop[hidden]{display:none}
+.pop.a{border-color:var(--p)}.pop.b{border-color:var(--t)}
+.pop::after{content:"";position:absolute;left:var(--ax,50%);width:16px;height:16px;background:#fff;border:3px solid inherit;border-color:inherit;transform:translateX(-50%) rotate(45deg)}
+.pop.up::after{bottom:-10px;border-top:0;border-left:0}
+.pop.down::after{top:-10px;border-bottom:0;border-right:0}
+.pop .x{position:absolute;top:6px;right:6px;width:30px;height:30px;border-radius:50%;border:0;background:var(--navy);color:#fff;font-size:1rem;line-height:1;cursor:pointer;padding:0}
+.lane{font-size:.74rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:0 0 3px}
+.pop.a .lane{color:var(--p)}.pop.b .lane{color:var(--t)}
+.step{font-size:1.02rem;font-weight:800;margin:0 0 5px;line-height:1.25}
+.more{font-size:.88rem;margin:0;line-height:1.4}
+.match{font-style:italic;font-size:.82rem;margin:6px 0 0;line-height:1.35}
+.grp{display:inline-flex;gap:6px;align-items:center;flex-wrap:wrap;justify-content:center}
+.grp .lbl{font-size:.8rem;font-weight:700}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (prefers-reduced-motion:reduce){.pin .ring{transition:none}}
 </style>
 </head>
 <body>
 <h1>The same pattern, twice</h1>
 <p class="sub">Select a numbered stop on either road to read it at your own pace.</p>
-<svg id="map" viewBox="0 0 1100 770" role="img" aria-label="Two winding roads with three numbered stops each. Use the numbered buttons below the map to read each stop.">
-  <rect width="1100" height="770" fill="#fdf1dc"/>
+<div class="wrap" id="wrap"><svg id="map" viewBox="0 0 1100 870" role="img" aria-label="Two winding roads with three numbered stops each. Use the numbered buttons below the map to read each stop.">
+  <rect width="1100" height="870" fill="#fdf1dc"/>
   <circle cx="1010" cy="50" r="36" fill="#f2b84b" opacity=".85"/>
   <g id="scene"></g>
   <g id="cars"></g>
-  <g id="sign"><rect x="130" y="690" width="840" height="64" rx="18" fill="#1f6b4a" stroke="#fff" stroke-width="5"/>
-  <text x="550" y="731" text-anchor="middle" font-size="27" font-weight="800" fill="#fff" font-family="Montserrat,sans-serif">Practical competence first, pedagogical thinking second</text></g>
+  <g id="sign"><rect x="130" y="796" width="840" height="64" rx="18" fill="#1f6b4a" stroke="#fff" stroke-width="5"/>
+  <text x="550" y="837" text-anchor="middle" font-size="27" font-weight="800" fill="#fff" font-family="Montserrat,sans-serif">Practical competence first, pedagogical thinking second</text></g>
 </svg>
+<div class="pop" id="pop" hidden role="group" aria-label="Stop details"></div></div>
 <div class="tools" role="group" aria-label="Choose a stop">
   <button type="button" id="prev">&#8592; Previous</button>
-  <span id="nums" style="display:contents"></span>
+  <span class="grp" role="group" aria-label="My experience: learning Whimsical"><span class="lbl" style="color:#5b479d">Whimsical</span><span id="numsA" style="display:contents"></span></span>
+  <span class="grp" role="group" aria-label="Facilitators learning CoTrace"><span class="lbl" style="color:#0e7c86">CoTrace</span><span id="numsB" style="display:contents"></span></span>
   <button type="button" id="next">Next &#8594;</button>
-  <span class="sep"></span>
   <button type="button" id="motion" aria-pressed="false">Pause the cars</button>
 </div>
-<div class="panel" id="panel" aria-live="polite">
-  <p class="lane">Start here</p>
-  <p class="step">Choose a numbered stop</p>
-  <p class="more">Stops 1 to 3 follow my experience of learning Whimsical. Stops 4 to 6 follow facilitators learning CoTrace. Each stop is matched to the one directly below or above it.</p>
-</div>
+<div class="sr" id="live" aria-live="polite"></div>
 <script>
 var NS="http://www.w3.org/2000/svg";
 var lanes=[
- {name:"My experience: learning Whimsical",cls:"a",c:"#5b479d",base:290,top:170},
- {name:"Facilitators' experience: learning CoTrace",cls:"b",c:"#0e7c86",base:570,top:450}
+ {name:"My experience: learning Whimsical",cls:"a",c:"#5b479d",base:350,top:230},
+ {name:"Facilitators' experience: learning CoTrace",cls:"b",c:"#0e7c86",base:630,top:510}
 ];
 var SX=[190,550,910];
 var stops=[
@@ -86,7 +92,7 @@ lanes.forEach(function(L,li){
  el("path",{d:d,fill:"none",stroke:"#fff","stroke-width":3,"stroke-dasharray":"16 14",opacity:".9"},scene);
  var t=el("text",{x:14,y:b-128,"font-size":26,"font-weight":800,fill:L.c,"font-family":"Montserrat,sans-serif"},scene);t.textContent=L.name;
 });
-SX.forEach(function(x,i){ el("line",{x1:x,y1:340,x2:x,y2:410,stroke:"#f2b84b","stroke-width":5,"stroke-dasharray":"9 9"},scene);});
+SX.forEach(function(x,i){ el("line",{x1:x,y1:400,x2:x,y2:470,stroke:"#f2b84b","stroke-width":5,"stroke-dasharray":"9 9"},scene);});
 var pins=[];
 stops.forEach(function(s,i){
  var L=lanes[s.l],x=SX[i%3],ty=roadY(L.base,x)-16,hy=ty-52;
@@ -95,7 +101,7 @@ stops.forEach(function(s,i){
  var h=el("g",{"class":"head"},g);
  el("polygon",{points:(x-20)+","+(hy+14)+" "+(x+20)+","+(hy+14)+" "+x+","+ty,fill:L.c,stroke:"#fff","stroke-width":3},h);
  el("circle",{cx:x,cy:hy,r:30,fill:L.c,stroke:"#fff","stroke-width":4},h);
- var tx=el("text",{x:x,y:hy+1,"text-anchor":"middle","dominant-baseline":"central","font-size":32,"font-weight":800,fill:"#fff","font-family":"Montserrat,sans-serif"},h);tx.textContent=i+1;
+ var tx=el("text",{x:x,y:hy+1,"text-anchor":"middle","dominant-baseline":"central","font-size":32,"font-weight":800,fill:"#fff","font-family":"Montserrat,sans-serif"},h);tx.textContent=(i%3)+1;
  g.addEventListener("click",function(){select(i);});
  pins.push(g);
 });
@@ -123,21 +129,36 @@ function frame(ts){
  requestAnimationFrame(frame);}
 requestAnimationFrame(frame);
 /* controls */
-var nums=document.getElementById("nums"),btns=[],cur=-1,panel=document.getElementById("panel");
-stops.forEach(function(s,i){var b=document.createElement("button");b.type="button";b.className="num "+lanes[s.l].cls;b.textContent=i+1;b.setAttribute("aria-pressed","false");
- b.setAttribute("aria-label","Stop "+(i+1)+" of 6: "+s.t);b.addEventListener("click",function(){select(i);});
- nums.appendChild(b);btns.push(b);if(i===2){var sp=document.createElement("span");sp.className="sep";nums.appendChild(sp);}});
+var btns=[],cur=-1,pop=document.getElementById("pop"),wrap=document.getElementById("wrap"),live=document.getElementById("live");
+stops.forEach(function(s,i){var b=document.createElement("button");b.type="button";b.className="num "+lanes[s.l].cls;b.textContent=(i%3)+1;b.setAttribute("aria-pressed","false");
+ b.setAttribute("aria-label",(s.l?"Facilitators, CoTrace":"My experience, Whimsical")+", stop "+((i%3)+1)+": "+s.t);b.addEventListener("click",function(){select(i);});
+ document.getElementById(s.l?"numsB":"numsA").appendChild(b);btns.push(b);});
 function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function closePop(){cur=-1;pop.hidden=true;btns.forEach(function(b){b.setAttribute("aria-pressed","false");});pins.forEach(function(p){p.classList.remove("on");});}
+function position(){
+ if(cur<0)return;var s=stops[cur],L=lanes[s.l],svg=document.getElementById("map"),k=svg.clientWidth/1100,x=SX[cur%3],hy=roadY(L.base,x)-68;
+ var pw=pop.offsetWidth,ph=pop.offsetHeight,W=wrap.clientWidth,H=wrap.clientHeight,gap=44*k;
+ var left=Math.max(4,Math.min(W-pw-4,x*k-pw/2)),up=!s.l,top;
+ if(up){top=(hy*k)-gap-ph+14*k;}else{top=(hy*k)+gap+10*k;}
+ if(top<4||top+ph>H-4){ if(up&&top<4){top=Math.min(H-ph-4,(hy*k)+gap+10*k);up=false;} else if(!up&&top+ph>H-4){top=Math.max(4,(hy*k)-gap-ph+14*k);up=true;} }
+ top=Math.max(4,Math.min(H-ph-4,top));
+ pop.style.left=left+"px";pop.style.top=top+"px";pop.style.setProperty("--ax",Math.max(24,Math.min(pw-24,x*k-left))+"px");
+ pop.className="pop "+L.cls+" "+(up?"up":"down");
+}
 function select(i){
  cur=i;var s=stops[i],L=lanes[s.l],o=stops[(i+3)%6];
  btns.forEach(function(b,k){b.setAttribute("aria-pressed",k===i);});
  pins.forEach(function(p,k){p.classList.toggle("on",k===i);});
- panel.className="panel "+L.cls;
- panel.innerHTML='<p class="lane">'+esc(L.name)+' &middot; Stop '+(i+1)+' of 6</p><p class="step">'+esc(s.t)+'</p><p class="more">'+esc(s.m)+'</p><p class="match">Matches stop '+(((i+3)%6)+1)+' on the other road: '+esc(o.t)+'</p>';
+ pop.innerHTML='<button type="button" class="x" aria-label="Close">&#215;</button><p class="lane">'+esc(L.name)+' &middot; Stop '+((i%3)+1)+'</p><p class="step">'+esc(s.t)+'</p><p class="more">'+esc(s.m)+'</p>';
+ pop.hidden=false;pop.querySelector(".x").addEventListener("click",closePop);
+ pop.className="pop "+L.cls;position();
+ live.textContent=L.name+", stop "+((i%3)+1)+": "+s.t+". "+s.m;
  var c=cars[s.l];c.mode="park";c.target=SX[i%3];if(paused||reduce){c.x=c.target;place(c);}
 }
 document.getElementById("prev").addEventListener("click",function(){select(cur<=0?5:cur-1);});
 document.getElementById("next").addEventListener("click",function(){select(cur>=5?0:cur+1);});
+document.addEventListener("keydown",function(e){if(e.key==="Escape")closePop();});
+window.addEventListener("resize",position);
 var mb=document.getElementById("motion");
 if(reduce){mb.textContent="Cars drive: off (reduced motion)";mb.disabled=true;}
 mb.addEventListener("click",function(){paused=!paused;mb.setAttribute("aria-pressed",paused);mb.textContent=paused?"Let the cars drive":"Pause the cars";
