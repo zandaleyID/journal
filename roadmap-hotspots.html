@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The same pattern, twice</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap">
+<style>
+:root{--bg:#fdf1dc;--navy:#0b214f;--p:#5b479d;--t:#0e7c86;--amber:#f2b84b}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--navy);font-family:Montserrat,system-ui,sans-serif;padding:14px 14px 18px}
+h1{font-size:clamp(1.15rem,3.6vw,1.8rem);text-align:center;margin:0 0 4px;font-weight:800}
+.sub{text-align:center;font-style:italic;margin:0 0 8px;font-size:.92rem}
+svg{display:block;width:100%;max-width:1100px;height:auto;margin:0 auto}
+.pin{cursor:pointer}
+.pin .ring{fill:none;stroke:var(--amber);stroke-width:7;opacity:0;transition:opacity .2s}
+.pin.on .ring{opacity:1}
+.pin:hover .head{filter:brightness(1.12)}
+.tools{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center;max-width:1100px;margin:6px auto 10px}
+.tools button{font:inherit;font-weight:700;font-size:.92rem;border:0;border-radius:999px;padding:9px 16px;cursor:pointer;background:var(--navy);color:#fff;min-height:44px}
+.tools .num{width:44px;height:44px;padding:0;font-size:1.05rem;color:#fff}
+.num.a{background:var(--p)}.num.b{background:var(--t)}
+.num[aria-pressed=true]{outline:3px solid var(--amber);outline-offset:2px}
+.tools .sep{width:8px}
+button:focus-visible{outline:3px solid #1a73e8;outline-offset:3px}
+.panel{max-width:760px;margin:0 auto;background:#fff;border:3px solid var(--navy);border-radius:14px;padding:14px 18px;min-height:128px}
+.panel.a{border-color:var(--p)}.panel.b{border-color:var(--t)}
+.lane{font-size:.82rem;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin:0 0 4px}
+.panel.a .lane{color:var(--p)}.panel.b .lane{color:var(--t)}
+.step{font-size:1.2rem;font-weight:800;margin:0 0 6px;line-height:1.25}
+.more{font-size:.95rem;margin:0;line-height:1.45}
+.match{font-style:italic;font-size:.92rem;margin:8px 0 0}
+@media (prefers-reduced-motion:reduce){.pin .ring{transition:none}}
+</style>
+</head>
+<body>
+<h1>The same pattern, twice</h1>
+<p class="sub">Select a numbered stop on either road to read it at your own pace.</p>
+<svg id="map" viewBox="0 0 1100 770" role="img" aria-label="Two winding roads with three numbered stops each. Use the numbered buttons below the map to read each stop.">
+  <rect width="1100" height="770" fill="#fdf1dc"/>
+  <circle cx="1010" cy="50" r="36" fill="#f2b84b" opacity=".85"/>
+  <g id="scene"></g>
+  <g id="cars"></g>
+  <g id="sign"><rect x="130" y="690" width="840" height="64" rx="18" fill="#1f6b4a" stroke="#fff" stroke-width="5"/>
+  <text x="550" y="731" text-anchor="middle" font-size="27" font-weight="800" fill="#fff" font-family="Montserrat,sans-serif">Practical competence first, pedagogical thinking second</text></g>
+</svg>
+<div class="tools" role="group" aria-label="Choose a stop">
+  <button type="button" id="prev">&#8592; Previous</button>
+  <span id="nums" style="display:contents"></span>
+  <button type="button" id="next">Next &#8594;</button>
+  <span class="sep"></span>
+  <button type="button" id="motion" aria-pressed="false">Pause the cars</button>
+</div>
+<div class="panel" id="panel" aria-live="polite">
+  <p class="lane">Start here</p>
+  <p class="step">Choose a numbered stop</p>
+  <p class="more">Stops 1 to 3 follow my experience of learning Whimsical. Stops 4 to 6 follow facilitators learning CoTrace. Each stop is matched to the one directly below or above it.</p>
+</div>
+<script>
+var NS="http://www.w3.org/2000/svg";
+var lanes=[
+ {name:"My experience: learning Whimsical",cls:"a",c:"#5b479d",base:290,top:170},
+ {name:"Facilitators' experience: learning CoTrace",cls:"b",c:"#0e7c86",base:570,top:450}
+];
+var SX=[190,550,910];
+var stops=[
+ {l:0,t:"Unfamiliar tool, no built-in walkthrough",m:"I had to find my own way around, with nothing built in to guide me."},
+ {l:0,t:"Tutorials and guidance to find where things were",m:"I used tutorials and guidance to work out where things were."},
+ {l:0,t:"Easier to use, so I could focus on the design",m:"Once the tool felt easier, I could put my attention on the design itself."},
+ {l:1,t:"Unfamiliar platform, new to its tools",m:"Facilitators arrive new to CoTrace and its tools."},
+ {l:1,t:"Unit 1 walkthrough: practical platform skills",m:"Unit 1 walks them through the practical skills of using the platform."},
+ {l:1,t:"Then they can focus on the pedagogy",m:"With the platform under control, they can turn to the pedagogy."}
+];
+function roadY(b,x){return b+22*Math.sin((x-40)/1020*2*Math.PI*1.25+.6);}
+function el(n,a,p){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(p)p.appendChild(e);return e;}
+var scene=document.getElementById("scene"),carsG=document.getElementById("cars");
+lanes.forEach(function(L,li){
+ var b=L.base,i,pts=[],ms=[],m2=[];
+ for(i=0;i<=11;i++){var x=i*100;ms.push([x,b-110+((i*37)%5)*-12-(i%2?28:0)]);m2.push([x,b-60-((i*53)%4)*-10+(i%2?-14:0)]);}
+ el("polygon",{points:"0,"+(b+30)+" "+ms.map(function(p){return p.join(",")}).join(" ")+" 1100,"+(b+30),fill:"#e8955a",opacity:".3"},scene);
+ el("polygon",{points:"0,"+(b+30)+" "+m2.map(function(p){return p.join(",")}).join(" ")+" 1100,"+(b+30),fill:"#d8643a",opacity:".22"},scene);
+ for(var x=-20;x<=1120;x+=10)pts.push(x+","+roadY(b,x).toFixed(1));
+ var d="M"+pts.join(" L");
+ el("path",{d:d,fill:"none",stroke:"#1a2240","stroke-width":52},scene);
+ el("path",{d:d,fill:"none",stroke:"#2f3a5e","stroke-width":45},scene);
+ el("path",{d:d,fill:"none",stroke:"#fff","stroke-width":3,"stroke-dasharray":"16 14",opacity:".9"},scene);
+ var t=el("text",{x:14,y:b-128,"font-size":26,"font-weight":800,fill:L.c,"font-family":"Montserrat,sans-serif"},scene);t.textContent=L.name;
+});
+SX.forEach(function(x,i){ el("line",{x1:x,y1:340,x2:x,y2:410,stroke:"#f2b84b","stroke-width":5,"stroke-dasharray":"9 9"},scene);});
+var pins=[];
+stops.forEach(function(s,i){
+ var L=lanes[s.l],x=SX[i%3],ty=roadY(L.base,x)-16,hy=ty-52;
+ var g=el("g",{"class":"pin","data-i":i,"aria-hidden":"true"},scene);
+ el("circle",{"class":"ring",cx:x,cy:hy,r:37},g);
+ var h=el("g",{"class":"head"},g);
+ el("polygon",{points:(x-20)+","+(hy+14)+" "+(x+20)+","+(hy+14)+" "+x+","+ty,fill:L.c,stroke:"#fff","stroke-width":3},h);
+ el("circle",{cx:x,cy:hy,r:30,fill:L.c,stroke:"#fff","stroke-width":4},h);
+ var tx=el("text",{x:x,y:hy+1,"text-anchor":"middle","dominant-baseline":"central","font-size":32,"font-weight":800,fill:"#fff","font-family":"Montserrat,sans-serif"},h);tx.textContent=i+1;
+ g.addEventListener("click",function(){select(i);});
+ pins.push(g);
+});
+/* cars */
+var cars=lanes.map(function(L,li){
+ var g=el("g",{},carsG);
+ el("rect",{x:-36,y:-9,width:72,height:20,rx:7,fill:"#f2b84b",stroke:"#0b214f","stroke-width":3},g);
+ el("polygon",{points:"-19,-9 -11,-24 15,-24 24,-9",fill:"#f7cf7a",stroke:"#0b214f","stroke-width":3,"stroke-linejoin":"round"},g);
+ el("polygon",{points:"-13,-10 -8,-19.5 2,-19.5 2,-10",fill:"#bfe3f2"},g);
+ el("polygon",{points:"5,-10 5,-19.5 12,-19.5 18,-10",fill:"#bfe3f2"},g);
+ [-23,23].forEach(function(wx){el("circle",{cx:wx,cy:12.5,r:8.5,fill:"#1d2440",stroke:"#fff","stroke-width":1.5},g);el("circle",{cx:wx,cy:12.5,r:3,fill:"#cfd6e6"},g);});
+ el("circle",{cx:35.5,cy:-1,r:4,fill:"#fff6cf"},g);
+ return {g:g,x:li?300:-40,mode:"drive",target:0,L:L};
+});
+function place(c){var b=c.L.base,y=roadY(b,c.x),a=Math.atan2(roadY(b,c.x+3)-roadY(b,c.x-3),6)*180/Math.PI;c.g.setAttribute("transform","translate("+c.x.toFixed(1)+" "+(y-4).toFixed(1)+") rotate("+a.toFixed(1)+")");}
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var paused=reduce,last=null;
+cars.forEach(function(c,i){if(reduce)c.x=60+i*40;place(c);});
+function frame(ts){
+ if(last===null)last=ts;var dt=Math.min(.05,(ts-last)/1000);last=ts;
+ if(!paused){cars.forEach(function(c){
+  if(c.mode==="drive"){c.x+=75*dt;if(c.x>1140)c.x=-50;}
+  else c.x+=(c.target-c.x)*Math.min(1,dt*4);
+  place(c);});}
+ requestAnimationFrame(frame);}
+requestAnimationFrame(frame);
+/* controls */
+var nums=document.getElementById("nums"),btns=[],cur=-1,panel=document.getElementById("panel");
+stops.forEach(function(s,i){var b=document.createElement("button");b.type="button";b.className="num "+lanes[s.l].cls;b.textContent=i+1;b.setAttribute("aria-pressed","false");
+ b.setAttribute("aria-label","Stop "+(i+1)+" of 6: "+s.t);b.addEventListener("click",function(){select(i);});
+ nums.appendChild(b);btns.push(b);if(i===2){var sp=document.createElement("span");sp.className="sep";nums.appendChild(sp);}});
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;");}
+function select(i){
+ cur=i;var s=stops[i],L=lanes[s.l],o=stops[(i+3)%6];
+ btns.forEach(function(b,k){b.setAttribute("aria-pressed",k===i);});
+ pins.forEach(function(p,k){p.classList.toggle("on",k===i);});
+ panel.className="panel "+L.cls;
+ panel.innerHTML='<p class="lane">'+esc(L.name)+' &middot; Stop '+(i+1)+' of 6</p><p class="step">'+esc(s.t)+'</p><p class="more">'+esc(s.m)+'</p><p class="match">Matches stop '+(((i+3)%6)+1)+' on the other road: '+esc(o.t)+'</p>';
+ var c=cars[s.l];c.mode="park";c.target=SX[i%3];if(paused||reduce){c.x=c.target;place(c);}
+}
+document.getElementById("prev").addEventListener("click",function(){select(cur<=0?5:cur-1);});
+document.getElementById("next").addEventListener("click",function(){select(cur>=5?0:cur+1);});
+var mb=document.getElementById("motion");
+if(reduce){mb.textContent="Cars drive: off (reduced motion)";mb.disabled=true;}
+mb.addEventListener("click",function(){paused=!paused;mb.setAttribute("aria-pressed",paused);mb.textContent=paused?"Let the cars drive":"Pause the cars";
+ if(!paused)cars.forEach(function(c){c.mode="drive";});});
+</script>
+</body>
+</html>

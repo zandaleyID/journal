@@ -19,13 +19,13 @@ description: An overview of the whole PP2 wireframe on a Whimsical canvas, as 16
 
 However, something I only noticed while reflecting is that I had to learn Whimsical independently, and I had built the Unit 1 walkthrough for a similar reason – so that facilitators could learn the platform at a practical level before moving on to the pedagogy. I made this the foundational unit because it made sense to me, and the Whimsical experience only showed me why afterwards.
 
-[figure]
-image: assets/parallel.gif
-still: assets/parallel-still.png
-alt: An animated roadmap with two winding roads, one above the other. A small yellow car drives along each road and stops at three numbered map pins. On the top road, my experience of learning Whimsical: an unfamiliar tool with no built-in walkthrough, then tutorials and guidance to find where things were, then a tool that was easier to use so I could focus on the design. On the lower road, facilitators learning CoTrace: an unfamiliar platform, then the Unit 1 walkthrough with practical platform skills, then they can focus on the pedagogy. Dashed lines link each stop on the top road to its match below, and a road sign at the bottom reads "Practical competence first, pedagogical thinking second".
-caption: Figure 2. Learning Whimsical and learning CoTrace followed the same pattern: practical competence first, pedagogical thinking second (Bothma, 2026).
-description: Top lane, my experience learning Whimsical. Step 1: unfamiliar tool, no built-in walkthrough. Step 2: tutorials and guidance to find where things were. Step 3: easier to use, so I could focus on the design. Lower lane, facilitators learning CoTrace. Step 1: unfamiliar platform, new to its tools. Step 2: Unit 1 walkthrough, practical platform skills. Step 3: then they can focus on the pedagogy. Dashed lines connect each pair of matching steps. The closing line reads: practical competence first, pedagogical thinking second.
-[/figure]
+[embed]
+url: roadmap-hotspots.html
+title: Interactive roadmap with six numbered stops comparing my experience learning Whimsical with facilitators learning CoTrace
+size: road
+caption: Figure 2. Learning Whimsical and learning CoTrace followed the same pattern: practical competence first, pedagogical thinking second (Bothma, 2026). Select a numbered stop to read it at your own pace.
+description: Two winding roads, one above the other, each with a small yellow car and three numbered stops. Top road, my experience of learning Whimsical. Stop 1: unfamiliar tool, no built-in walkthrough. Stop 2: tutorials and guidance to find where things were. Stop 3: easier to use, so I could focus on the design. Lower road, facilitators learning CoTrace. Stop 4: unfamiliar platform, new to its tools. Stop 5: Unit 1 walkthrough, practical platform skills. Stop 6: then they can focus on the pedagogy. Dashed lines connect each pair of matching stops (1 and 4, 2 and 5, 3 and 6). A road sign at the bottom reads: practical competence first, pedagogical thinking second. The numbered buttons below the map, or the stops themselves, show each stop in a text panel.
+[/embed]
 
 It also made me see that how a course is structured should be communicated at the start, so that learners know what to expect from their own path. Biggs and Tang (2007) describe goals made clear upfront and advance organisers that give learners a framework to fit new material into. Wang et al. (2013) report students who were confused and frustrated when they weren’t sure what was expected of them, and Laubscher and Bosch (2020, citing Hammarlund et al., 2015) note that communicating information early supports motivation and planning. I would now treat making the learning path clear from the start as a deliberate design decision.
 
