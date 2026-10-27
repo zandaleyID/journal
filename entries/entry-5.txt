@@ -7,12 +7,13 @@ banner-caption: Entry 5 banner (Bothma, 2026).
 ---
 CoTrace is my conceptual AI learning platform, built on generativist pedagogy and structured around three phases: Explore, Draft and Refine. My Practical Project 2 proposes an orientation programme for newly appointed CoTrace facilitators. This entry began before that proposal was finalised, so some early ideas below differ from what I submitted, and I have kept them to show how my thinking changed. My learner analysis showed three gaps in facilitators, and I wanted to see how Universal Design for Learning (UDL) could close them.
 
-[figure]
-image: assets/udl-mapping.png
-alt: A diagram linking each of three facilitator gaps to a UDL principle: the motivational and identity gap to multiple means of engagement, the evaluative gap to multiple means of action and expression, and the digital literacy gap to multiple means of representation.
-caption: Figure 1. Each facilitator gap paired with a UDL principle.
-description: Three rows pair a gap with a principle. The motivational and identity gap is met by multiple means of engagement. The evaluative gap is met by multiple means of action and expression. The digital literacy gap is met by multiple means of representation.
-[/figure]
+[embed]
+url: udl-flipcards.html
+title: Flipcards pairing each of three facilitator gaps with a UDL principle
+size: cards
+caption: Figure 1. Flip each card to see the UDL principle that answers the facilitator gap (UDL principles from Ralabate, 2011).
+description: Three cards, each showing a facilitator gap on the front and a UDL principle on the back. The motivational and identity gap (experienced educators shifting from knowledge deliverer to cognitive orchestrator) is answered by multiple means of engagement: a climate of trust, errors as learning opportunities, tasks tied to real jobs. The evaluative gap (assessment habits built around standardised, finished work) is answered by multiple means of action and expression: different ways to show competence. The cognitive and digital (AI) literacy gap (uneven tech confidence; dense text overloads) is answered by multiple means of representation: visual, auditory and conceptual forms.
+[/embed]
 
 ## Why engagement matters most here
 Of the three principles in the diagram, engagement stood out the most because, beyond technology, the main challenge facilitators potentially face is affective and tied to identity. These experienced educators are being asked to shift from “knowledge deliverer” to “cognitive orchestrator” (Vendrell and Johnston, 2026), giving up the expert role Biggs and Tang (2007) describe, which can threaten their pedagogical agency and leave them unsure of their role.
