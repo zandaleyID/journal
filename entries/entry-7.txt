@@ -1,6 +1,6 @@
 title: Does the Agent Earn Its Place?
 number: 7
-subtitle: Testing two decisions from my PP2 design against the theory.
+subtitle: Testing two decisions from my PP2 design against the theory • 28 September 2026
 banner: assets/banner-entry-7.jpg
 banner-alt: The word "presence" in cut-out magazine letters over a surreal collage. A large hand points in from the left, a megaphone floats at the top, a classical marble bust and two statues stand in the centre, and a tall metallic humanoid figure stands against a pink pyramid on the right.
 banner-caption: Entry 7 banner (Bothma, 2026).
