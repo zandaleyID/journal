@@ -1,0 +1,55 @@
+title: Guide the Process, Leave the Meaning Open
+short-title: Guide the Process
+number: 8
+subtitle: What my feedback design, and the gap in it, taught me about my philosophy of multimodal design
+banner: assets/banner-entry-9.jpg
+banner-alt: Banner image for Entry 8.
+---
+This entry picks up where Entry 7 left off. It looks at the feedback structure in my PP2 design and what it showed me, and it finishes with how my philosophy of multimodal design is evolving.
+
+## Who gives the feedback
+In PP2, the procedural task in Unit 1 gets immediate AI-generated feedback, which gives formative knowledge without overloading human reviewers. Units 2 to 4 need analysis and authentic evaluation, so a human reviewer gives qualitative feedback.
+
+[table]
+caption: Table 1. Who gives feedback in each unit of my PP2 design (Bothma, 2026).
+| Unit | Task | AI feedback | Human feedback |
+| Unit 1 | Platform Navigation Task | Automated feedback on the platform's own summary screen | No separate review |
+| Unit 2 | Mock Student Response Task | First-pass check against the procedural rubric | A fuller comment on the quality of guiding and questioning |
+| Unit 3 | Holistic Portfolio Evaluation Task | Confirms completion only | Feedback on the depth of process |
+| Unit 4 | Task Design Worksheet and reflective commentary | Confirms completion | Feedback on a personal, identity-related task |
+[/table]
+
+One reason is perception. Wang et al. (2013) found that students adjust their learning approaches in response to the teaching and learning environment, so my inference is that a high-stakes task given automated feedback might not feel high-stakes. That inference is mine, not theirs. The other reason is the identity and nuance facilitators need from a person, and the respect and safety of human feedback.
+
+Looking at this through the Community of Inquiry, deciding who gives which feedback, and when, is teaching presence: the design, facilitation and direction of the course (Anderson et al., 2001, cited in Bosch, Laubscher and Olivier, 2020, p. 56).
+
+## The gap I found
+What I never specified is what facilitators do with human feedback once they have it. I assumed it would help them with the next unit or correct what they had misunderstood. If feedback is going to be an active part of learning, they need something to do with it. The lightest version I can think of is a low-stakes response in the ungraded reflective journal. It wouldn't add to their load, because it belongs to their own exploration of the identity shift and is not another graded requirement.
+
+I also see now that the agent works as a collaborator, since facilitators can use it to discuss theories, test assumptions and brainstorm. I intended that, but I didn't make it explicit in the wireframe.
+
+## My philosophy so far
+The idea that has stuck with me most is affordance. You can choose a tool or mode intending one kind of engagement, but that affordance is wasted unless you guide learners to use it the way you meant (Day and Lloyd, 2007). At the same time, learners interpret modes differently, and that can be a strength, because it gives them more than one way into a task (Kress et al., 2014; Ralabate, 2011).
+
+The Unit 4 capstone is where I balance the two. The task design worksheet fixes the structure: an AI-free entry zone before any AI interaction, and at least one deliberate moment where direct expert answers are held back, so facilitators don't fall back on familiar answer-checking habits under pressure. Everything else is theirs: the subject and scenario, where cognitive friction happens and how they frame the Socratic prompts, whether they respond in writing, audio or video, and what the shift from content deliverer to cognitive orchestrator means for them (Vendrell and Johnston, 2026). So I guide the process and leave the content and the meaning open. The first protects the pedagogy and keeps the load manageable, and the second respects facilitators as professionals.
+
+[figure]
+image: assets/guidance-flexibility.png
+alt: A diagram of a road running from Start to Their Own Design. Two navy signs stand below the road and mark the fixed parts of the process: 1, an AI-free entry zone before any AI interaction, and 2, a deliberate hold-back moment where direct expert answers are held back. Four coloured sticky notes sit above the road and mark what is left open: subject and scenario; where cognitive friction happens and how they frame the Socratic prompts; writing, audio or video; and what the shift to cognitive orchestrator means for them. A caption reads that the structure is set and the rest belongs to the facilitator.
+caption: Figure 1. Guiding the process while leaving the content and meaning open in the Unit 4 task design worksheet (Bothma, 2026).
+description: The fixed part is the process. It has two steps, an AI-free entry zone before any AI interaction, then a deliberate hold-back moment where direct expert answers are held back. This protects the pedagogy and keeps the load manageable. The open part is content and meaning, and facilitators decide it themselves, which respects them as professionals. It covers the subject and scenario, where cognitive friction happens and how Socratic prompts are framed, the mode of response (writing, audio or video), and what the shift from content deliverer to cognitive orchestrator means for them.
+[/figure]
+
+[question]
+text: When you get feedback on your work, what do you do with it? Does the course give you somewhere to put it?
+reply: Thank you for sharing. Feedback only helps once there is somewhere for it to go.
+[/question]
+
+[references]
+Bosch, C., Laubscher, D. and Olivier, J., 2020. The affordances of the Community of Inquiry framework for self-directed blended learning in South African research. In: J. Olivier, ed. 2020. *Self-directed multimodal learning in higher education*. Cape Town: AOSIS. pp.51-92.
+Day, D. and Lloyd, M., 2007. Affordances of online technologies: More than the properties of the technology. *Australian Educational Computing*, [e-journal] 22(2), pp.17-21. Available at: <https://www.researchgate.net/publication/27476254_Affordances_of_online_technologies_More_than_the_properties_of_the_technology> [Accessed 18 August 2026].
+Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teaching and learning: The rhetorics of the science classroom*. [e-book] London: Routledge. Available at: <https://www.academia.edu/27773901/Multimodal_Teaching_and_Learning_The_Rhetorics_of_the_Science_Classroom> [Accessed 18 September 2026].
+Ralabate, P.K., 2011. Universal Design for Learning: Meeting the needs of all students. *The ASHA Leader*, [e-journal] 16(10), pp.14-17. doi:10.1044/leader.FTR2.16102011.14.
+Vendrell, M. and Johnston, S.K., 2026. Scaffolding critical thinking with generative AI: Design principles for integrating large language models in higher education. *Computers and Education: Artificial Intelligence*, [e-journal]. doi:10.1016/j.caeai.2026.100572.
+Wang, X., Su, Y., Cheung, S., Wong, E. and Kwong, T., 2013. An exploration of Biggs' constructive alignment in course design and its impact on students' learning approaches. *Assessment & Evaluation in Higher Education*, [e-journal] 38(4), pp.477-491. doi:10.1080/02602938.2012.658018.
+[/references]

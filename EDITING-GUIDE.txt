@@ -117,3 +117,14 @@ IF SOMETHING LOOKS WRONG
   Check that file names match exactly, including capital letters and the extension (.jpg and .png are different).
   Image paths always start with assets/ and video paths with video/.
   If the sidebar shows "(file not found)", the name in contents.txt does not match the file name.
+
+
+TABLES
+Start with [table], add a caption line, then one row per line with cells separated by | and end with [/table].
+The first row is the header row. Example:
+
+[table]
+caption: Table 1. A short caption.
+| Unit | Task |
+| Unit 1 | Something |
+[/table]

@@ -175,3 +175,11 @@ details p { margin: .5em 0 .2em; }
 
 .embed.road { height: 960px; }
 @media (max-width: 660px) { .embed.road { height: 620px; } }
+
+/* tables */
+.tablefig .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+.tablefig table { border-collapse: collapse; width: 100%; font-size: 1.02rem; min-width: 560px; }
+.tablefig th, .tablefig td { text-align: left; vertical-align: top; padding: .65rem .8rem; border-bottom: 1px solid var(--line); line-height: 1.45; }
+.tablefig thead th { background: var(--accent-soft, rgba(91,71,157,.14)); font-weight: 700; }
+.tablefig tbody tr:last-child th, .tablefig tbody tr:last-child td { border-bottom: 0; }
+.tablefig tbody th { font-weight: 700; white-space: nowrap; }

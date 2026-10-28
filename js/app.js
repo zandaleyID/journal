@@ -95,7 +95,7 @@
     return { meta: parseKV(text.slice(0, i).split("\n")), body: text.slice(text.indexOf("\n", i) + 1) };
   }
 
-  var BLOCKS = { figure: 1, embed: 1, video: 1, question: 1, note: 1, references: 1, "image-references": 1 };
+  var BLOCKS = { table: 1, figure: 1, embed: 1, video: 1, question: 1, note: 1, references: 1, "image-references": 1 };
 
   function render(body) {
     var lines = body.replace(/\r\n?/g, "\n").split("\n"), out = [], i = 0, para = [], list = null;
@@ -142,6 +142,18 @@
       var items = lines.map(function (l) { return l.trim(); }).filter(Boolean);
       return "<h2>" + (name === "references" ? "References" : "Image references") + '</h2><ul class="refs">' +
         items.map(function (x) { return "<li>" + inline(x) + "</li>"; }).join("") + "</ul>";
+    }
+    if (name === "table") {
+      var rows = [], rest = [];
+      lines.forEach(function (l) { if (/^\s*\|/.test(l)) rows.push(l); else rest.push(l); });
+      var to = parseKV(rest);
+      var cells = rows.map(function (r) { return r.trim().replace(/^\|/, "").replace(/\|$/, "").split("|").map(function (c) { return c.trim(); }); });
+      if (!cells.length) return "";
+      var th = "<tr>" + cells[0].map(function (c) { return '<th scope="col">' + inline(c) + "</th>"; }).join("") + "</tr>";
+      var tb = cells.slice(1).map(function (r) {
+        return "<tr>" + r.map(function (c, k) { return k === 0 ? '<th scope="row">' + inline(c) + "</th>" : "<td>" + inline(c) + "</td>"; }).join("") + "</tr>";
+      }).join("");
+      return '<figure class="tablefig"><div class="table-wrap" tabindex="0" role="region" aria-label="' + esc(to.caption || "Table") + '"><table><thead>' + th + "</thead><tbody>" + tb + "</tbody></table></div>" + figCaption(to) + "</figure>";
     }
     var o = parseKV(lines);
     if (name === "figure") {
@@ -308,7 +320,7 @@
 
   function collect() {
     var items = [];
-    content.querySelectorAll("h1,h2,h3,p,li,figcaption,blockquote,img[alt],iframe[title],video[aria-label]").forEach(function (el) {
+    content.querySelectorAll("h1,h2,h3,p,li,td,th,figcaption,blockquote,img[alt],iframe[title],video[aria-label]").forEach(function (el) {
       if (el.closest("[data-noread],.fig-tools,.small,.reply,.banner figcaption")) return;
       var d = el.closest("details"); if (d && !d.open) return;
       var text = "", target = el;
