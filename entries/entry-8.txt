@@ -1,4 +1,4 @@
-title: Building the Map Before Anyone Walks It
+title: Learning the Path
 short-title: Learning the Path
 number: 8
 date: 13 October 2026
