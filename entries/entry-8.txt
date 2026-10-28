@@ -1,7 +1,7 @@
-title: Building the Map Before Anyone Walks It
+title: Learning the Path
 short-title: Learning the Path
 number: 7
-date: 13 October 2026
+subtitle: Building the Map Before Anyone Walks It • 13 October 2026
 banner: assets/banner-entry-8.jpg
 banner-alt: The word "pathways" in cut-out magazine letters over a surreal collage. A giant hand reaches through a round golden mirror in a red rock canyon and holds a small yellow vintage car on a winding road.
 banner-caption: Entry 7 banner (Indieground Design, 2024; Bothma, 2026).
