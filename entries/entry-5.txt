@@ -1,4 +1,4 @@
-title: From Ideal Design to Workable Design
+title: From Ideal to Workable
 number: 4
 subtitle: Universal Design for Learning, and what happened to my ideas when they met real constraints • 9 September 2026
 banner: assets/banner-entry-5.jpg
