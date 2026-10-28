@@ -1,12 +1,12 @@
 title: From Potential to Participation
-number: 3
+number: 2
 subtitle: Mayer's CTML and Realising Affordances
 date: 20 August 2026
 banner: assets/banner-entry-3.jpg
 banner-alt: The word "affordances" in cut-out magazine letters across an open sketchbook. Watercolour drawings of an eye, an ear, a sound spiral and a film strip surround it, with handwritten labels naming parts of an AI model.
-banner-caption: Entry 3 banner (Augusteo, 2026; Bothma, 2026).
+banner-caption: Entry 2 banner (Augusteo, 2026; Bothma, 2026).
 ---
-The idea of orchestration carried into my Assignment 1 critique of a [Coursera course](https://www.coursera.org/learn/leveraging-genai-to-develop-critical-thinking-skills/home/module/1) on using generative AI to develop critical thinking. I analysed the course through Mayer's Cognitive Theory of Multimedia Learning (CTML) (Mayer, 2024), which rests on three assumptions: we process information through separate visual and verbal channels, each channel has limited capacity, and learning happens when we actively select, organise and integrate what we take in (Mayer, 2024).
+For Assignment 1, I critiqued a [Coursera course](https://www.coursera.org/learn/leveraging-genai-to-develop-critical-thinking-skills/home/module/1) on using generative AI to develop critical thinking. I analysed the course through Mayer's Cognitive Theory of Multimedia Learning (CTML) (Mayer, 2024), which rests on three assumptions: we process information through separate visual and verbal channels, each channel has limited capacity, and learning happens when we actively select, organise and integrate what we take in (Mayer, 2024).
 
 I'm not used to viewing a course through such a critical lens, and having the theory to back up what seemed like small problems made me realise they could become significant ones. Mapping the course out made the pattern clear. Module 1 presents an AI-integrated dialogue activity and role play, but Modules 2-5 contain almost nothing interactive beyond the Progressive Prompting Exercise (PPE): 22 short videos, some reading, and end-of-module quizzes. The course had an AI dialogue tool built in, yet the PPE sent me to an external LLM of my choice, instead of pointing me to its own AI tool. Without a real reason to engage with a tool or feature, most learners simply won't, and that's a wasted affordance: a possibility for action that never gets used (Day and Lloyd, 2007).
 
@@ -20,7 +20,7 @@ description: Each bar is one module, with numbers showing minutes in the order a
 The segmented videos showed the same problem from another angle. They follow Mayer's advice to segment, which makes information easier to process without overload, but chunking videos back-to-back with no activity in between means learners never engage with the content constructively, however well it's structured (Mayer, 2024). The PPE, the only task in Modules 2 to 4 that requires any active engagement, mirrored this. I was instructed to copy large blocks of text into an external LLM, with little guidance for future adaptation. Because the PPE content wasn't effectively scaffolded, it asked more of my limited working memory than I could give (Mayer, 2024). The interactive AI tool could have helped me adapt that text, but the exercise never involved it directly.
 
 ## Final thoughts
-Wakelet (Entry 2) showed me that orchestration is a design skill, and this course critique showed me what happens when it's missing: tools and modes are present, but the lack of interactivity doesn't connect them to a purpose. For a designer, the question moves from what a tool can do to what a learner will actually do with it (Day and Lloyd, 2007). I need to carry that into this journal. Every mode I choose to include should serve the message, not simply because it's available. It's the wasted affordance idea turned inward on my own design choices.
+This course critique showed me what happens when tools and modes are present but nothing connects them to a purpose. For a designer, the question moves from what a tool can do to what a learner will actually do with it (Day and Lloyd, 2007). I need to carry that into this journal. Every mode I choose to include should serve the message, not simply because it's available. It's the wasted affordance idea turned inward on my own design choices.
 
 [question]
 text: If you removed one mode from your most recent design and nothing was lost, was it ever doing any work?

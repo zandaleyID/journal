@@ -1,10 +1,10 @@
-title: Learning the Path
+title: Building the Map Before Anyone Walks It
 short-title: Learning the Path
-number: 8
-subtitle: Building the Map Before Anyone Walks It • 13 October 2026
+number: 7
+date: 13 October 2026
 banner: assets/banner-entry-8.jpg
 banner-alt: The word "pathways" in cut-out magazine letters over a surreal collage. A giant hand reaches through a round golden mirror in a red rock canyon and holds a small yellow vintage car on a winding road.
-banner-caption: Entry 8 banner (Indieground Design, 2024; Bothma, 2026).
+banner-caption: Entry 7 banner (Indieground Design, 2024; Bothma, 2026).
 ---
 This entry looks at how I built the storyboard for PP2, the tool I used, and something the tool showed me about my own design. Instead of a storyboard, I created a detailed wireframe, took screenshots of it, labelled the transitions between slides and added a few annotations. I did this to make the learning path as explicit as possible, including what facilitators do, how they progress and interact with the course, not just what the course contains. I over-annotated at first and had to condense it so the path stayed clear, which also made it much easier to write about afterwards.
 

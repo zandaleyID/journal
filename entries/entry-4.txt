@@ -1,10 +1,10 @@
 title: The Affective Layer
-number: 4
+number: 3
 subtitle: Beyond CTML: How Media Affects Engagement and Understanding
 date: 27 August 2026
 banner: assets/banner-entry-4.jpg
 banner-alt: The word "Affect" in cut-out letters over a collage of faces, eyes and mouths showing different expressions, with scribbled red lines and curved printed text around them.
-banner-caption: Entry 4 banner (AnMark, 2024; Bothma, 2026).
+banner-caption: Entry 3 banner (AnMark, 2024; Bothma, 2026).
 ---
 I'm doing an online course, and an interactive activity asks for my own take on a core idea. It offers a voice function, and I'd much rather speak than type. Here's what happens:
 
