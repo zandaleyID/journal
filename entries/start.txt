@@ -1,7 +1,7 @@
 title: Start here
 subtitle: A multimodal reflective journal on learning with media.
 ---
-This journal follows how my thinking changed as I worked with theories of multimedia learning, universal design and instructional design. Each entry mixes writing with other modes: diagrams, animations, interactive pages and recordings. Each one ends with a question for you.
+This journal follows how my thinking changed as I worked with theories of multimedia learning, universal design, and instructional design. Each entry mixes writing with other modes: diagrams, animations, interactive pages, videos, and recordings. Each entry ends with a final thought and a question for you.
 
 ## How to move around
 Use the contents on the left to open an entry, or the Previous and Next buttons at the bottom of each page. On a phone, open the contents with the menu button at the top left.
