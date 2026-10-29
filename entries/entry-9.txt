@@ -5,9 +5,9 @@ subtitle: What my feedback design, and what I left out of it, taught me about my
 banner: assets/banner-entry-9.jpg
 banner-alt: Banner image for Entry 8.
 ---
-This entry picks up where Entry 7 left off. It looks at the feedback structure in my PP2 design and what it showed me, and it finishes with how my philosophy of multimodal design is evolving.
+This entry picks up where Entry 7 left off. It looks at what the feedback structure in my PP2 design taught me, and it finishes with how my philosophy of multimodal design is evolving.
 
-## Who gives the feedback
+## Who gives the feedback?
 In PP2, the procedural task in Unit 1 gets immediate AI-generated feedback, which gives formative knowledge without overloading human reviewers. Units 2 to 4 need analysis and authentic evaluation, so a human reviewer gives qualitative feedback.
 
 [table]
@@ -19,19 +19,19 @@ caption: Table 1. Who gives feedback in each unit of my PP2 design (Bothma, 2026
 | Unit 4 | Task Design Worksheet and reflective commentary | Confirms completion | Feedback on a personal, identity-related task |
 [/table]
 
-One reason is perception. Wang et al. (2013) found that students adjust their learning approaches in response to the teaching and learning environment, so my inference is that a high-stakes task given automated feedback might not feel high-stakes. That inference is mine, not theirs. The other reason is the identity and nuance facilitators need from a person, and the respect and safety of human feedback.
+One reason I chose to structure feedback this way is due to learner perception. Wang et al. (2013) found that students adjust their learning approaches in response to the teaching and learning environment. My own inference is that a high-stakes task given automated feedback might not feel 'high-stakes'. Another reason concerns the identity and nuance facilitators need from a person, and the respect and safety of human feedback where it is due.
 
-Looking at this through the Community of Inquiry, deciding who gives which feedback, and when, is teaching presence: the design, facilitation and direction of the course (Anderson et al., 2001, cited in Bosch, Laubscher and Olivier, 2020, p. 56).
+Looking at this through the Community of Inquiry, deciding who gives which feedback, and when, is teaching presence, including the design, facilitation and direction of the course (Anderson et al., 2001, cited in Bosch, Laubscher and Olivier, 2020, p. 56).
 
 ## What I left out
-What I never specified is what facilitators do with human feedback once they have it. I assumed it would help them with the next unit or correct what they had misunderstood. If feedback is going to be an active part of learning, they need something to do with it. The lightest version I can think of is a low-stakes response in the ungraded reflective journal. It wouldn't add to their load, because it belongs to their own exploration of the identity shift and is not another graded requirement.
+What I never specified is what facilitators do with human feedback once they have it. I assumed it would help them with the next unit or correct what they had misunderstood. If feedback is going to be an active part of learning, they need something of value to do with it. If I had to change this, the lightest version I can think of is a low-stakes response to feedback could be integrated within the ungraded reflective journal. It wouldn't add to their load, because it belongs to their own exploration of the identity shift and is not another graded requirement.
 
-I also see now that the agent works as a collaborator, since facilitators can use it to discuss theories, test assumptions and brainstorm. I intended that, but I didn't make it explicit in the wireframe.
+I also see now that the agent works as a collaborator, since facilitators can use it to discuss theories, test assumptions, and brainstorm. I intended that, but I didn't make it explicit in the wireframe.
 
 ## My philosophy so far
-The idea that has stuck with me most is affordance. You can choose a tool or mode intending one kind of engagement, but that affordance is wasted unless you guide learners to use it the way you meant (Day and Lloyd, 2007). At the same time, learners interpret modes differently, and that can be a strength, because it gives them more than one way into a task (Kress et al., 2014; Ralabate, 2011).
+The idea that has stuck with me most is affordance. You can choose a tool or mode intending one kind of engagement, but that affordance is wasted unless you guide learners to use it the way you meant (Day and Lloyd, 2007). At the same time, learners interpret modes differently, and that can be a strength, because it gives them more than one way of engaging with a task (Kress et al., 2014; Ralabate, 2011).
 
-The Unit 4 capstone is where I balance the two. Facilitators use a worksheet to design an open-ended learning task of their own, and then record a short reflective commentary on their design choices. The screen below is annotated to show which parts are fixed and which are left open.
+The Unit 4 capstone is where I balance these two aspects. Facilitators use a worksheet to design an open-ended learning task of their own, and then record a short reflective commentary on their design choices. The screen below is annotated to show which parts are fixed and which are left open.
 
 [figure]
 image: assets/unit4-worksheet-annotated.png
@@ -40,7 +40,7 @@ caption: Figure 1. The Unit 4 Task Design Worksheet and Reflective Commentary sc
 description: The worksheet has six fields. Two fix the structure: field 4, where the AI-free and AI-mediated phases sit, and field 6, one hold-back moment and why it is there. Four are left to the facilitator: the task title, the learning goal, the student scenario and the example prompt types. In the reflective commentary that follows, the facilitator also chooses whether to respond in writing, audio or video. Facilitators can ask the agent for help with any field.
 [/figure]
 
-The worksheet fixes the structure through fields 4 and 6: an AI-free entry zone before any AI interaction, and at least one deliberate moment where direct expert answers are held back, so facilitators don't fall back on familiar answer-checking habits under pressure. Everything else is theirs: the subject and scenario (fields 1 to 3), where cognitive friction happens and how they frame the Socratic prompts, whether they respond in writing, audio or video, and what the shift from content deliverer to cognitive orchestrator means for them (Vendrell and Johnston, 2026). So I guide the process and leave the content and the meaning open. The first protects the pedagogy and keeps the load manageable, and the second respects facilitators as professionals.
+The worksheet fixes the structure through fields 4 and 6, consisting of an AI-free entry zone before any AI interaction, and at least one deliberate moment where direct expert answers are held back. This is to prevent facilitators from falling back on familiar answer-checking habits under pressure. Everything else is up to their own discretion; the subject and scenario (fields 1 to 3), where cognitive friction happens and how they frame the Socratic prompts, whether they respond in writing, audio or video, and what the shift from content deliverer to cognitive orchestrator means for them (Vendrell and Johnston, 2026). This guides the process and leaves the content and the meaning open. The first protects the pedagogy and keeps the load manageable, and the second respects facilitators as professionals.
 
 [question]
 text: When you get feedback on your work, what do you do with it? Does the course give you somewhere to put it?
