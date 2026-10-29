@@ -3,7 +3,8 @@ short-title: Guide the Process
 number: 8
 subtitle: What my feedback design, and what I left out of it, taught me about my philosophy of multimodal design • 14 October 2026
 banner: assets/banner-entry-9.jpg
-banner-alt: Banner image for Entry 8.
+banner-alt: The word "scaffold" in cut-out magazine letters over a colourful mural. A worker in a hi-vis vest stands on scaffolding in front of the mural, and a pink flower with a ladybug and a hand holding a paintbrush sits at the right.
+banner-caption: Entry 8 banner (add your image credits here, Bothma, 2026).
 ---
 This entry picks up where Entry 7 left off. It looks at what the feedback structure in my PP2 design taught me, and it finishes with how my philosophy of multimodal design is evolving.
 
