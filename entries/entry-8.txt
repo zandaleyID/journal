@@ -19,7 +19,7 @@ description: An overview of the whole PP2 wireframe on a Whimsical canvas, as 16
 
 However, something I only noticed while reflecting is that I had to learn Whimsical independently, and I had built the Unit 1 walkthrough for a similar reason – so that facilitators could learn the platform at a practical level before moving on to the pedagogy. I made this the foundational unit because it made sense to me, and the Whimsical experience only showed me why afterwards.
 
-My personal experience learning how to use Whimsical and facilitators' potential experience learning how to use CoTrace follow the same pattern. Select a numbered stop on the interactive diagram below to read about these journeys at your own pace.
+I imagine my personal experience learning how to use Whimsical and facilitators' potential experience learning how to use CoTrace following the same pattern. Select a numbered stop on the interactive diagram below to read about these journeys at your own pace.
 
 [embed]
 url: roadmap-hotspots.html
