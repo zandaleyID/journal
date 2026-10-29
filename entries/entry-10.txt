@@ -1,0 +1,20 @@
+title: Arranging the Pieces
+short-title: Arranging the Pieces
+number: 9
+subtitle: A final collage of what this module has changed in how I design • 29 October 2026
+---
+This journal started with a collage theme because collage works the way multimodal design does: separate pieces, each in its own mode, arranged until together they make meaning. For my final entry, I wanted to hand that arranging over to you, rather than summarise eight entries in one more block of text.
+
+Each note below holds one idea I took from an earlier entry, from the choice of mode in Entry 1 to guiding the process while leaving the meaning open in Entry 8. Drag a note onto the board, or tap it, or press Enter on it, and it becomes part of one picture. You can place them in any order. Notice which pieces end up holding the others up, and where the picture still feels unfinished. That is intentional, because none of this is a final thought.
+
+[embed]
+url: final-collage.html
+title: Interactive collage: place eight thoughts from this journal to build one picture
+size: mid
+caption: Figure 1. An interactive collage of the eight main ideas from this journal, one for each earlier entry. Designed by me and generated with Claude (Anthropic, 2026).
+description: A paper-cut collage board starts empty, with eight dashed, numbered outlines. Eight sticky notes sit below it, each carrying one idea from an earlier entry. Placing a note adds a piece to the picture. Entry 1, that every mode is a choice, is the sun. Entry 2, that affordances are only potential, is the hill. Entry 3, that feeling shapes learning, is a whimsical tree. Entry 4, giving learners many ways in, is a rainbow-arched magical gate glowing with stars. Entry 5, that cutting load can cut access, is a set of balanced scales. Entry 6, that every feature must earn its place, is a swallow in flight. Entry 7, building the map before anyone walks it, is a winding path leading to the gate. Entry 8, guiding the process and leaving the meaning open, is a signpost beside the gate with one arrow reading Guide and one reading Open. When all eight are placed, butterflies appear and cut-out letters spell “still becoming”. A button lets the reader take the collage apart and start again.
+[/embed]
+
+[references]
+Anthropic, 2026. *Claude* (Sonnet 5.5) [Large language model]. Available at: <https://claude.ai> [Accessed 29 October 2026].
+[/references]

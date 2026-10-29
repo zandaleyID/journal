@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Build the collage: what this module taught me</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&family=Special+Elite&display=swap">
+<style>
+:root{--bg:#eaf1ff;--navy:#0b214f;--muted:#3d4d78;--purple:#5b479d;--teal:#0e7c86}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--navy);font-family:Montserrat,system-ui,sans-serif;padding:14px 16px 18px}
+h1{font-family:Anton,Impact,"Arial Narrow",sans-serif;font-weight:400;text-align:center;margin:0 0 4px;font-size:clamp(1.3rem,5vw,2.2rem);letter-spacing:.01em;line-height:1.1}
+.sub{text-align:center;margin:0 auto 12px;font-size:.9rem;max-width:62ch;color:var(--muted)}
+.wrap{max-width:900px;margin:0 auto}
+.board{position:relative;border-radius:6px;box-shadow:0 6px 18px rgba(11,33,79,.22);overflow:hidden;background:#f6ecd8;border:3px solid #fff;outline:2px dashed transparent;transition:outline-color .15s}
+.board.over{outline-color:var(--purple)}
+.board svg{display:block;width:100%;height:auto}
+.badge circle{fill:#fff;stroke:var(--navy);stroke-width:2;opacity:.8}
+.badge text{font:700 13px Montserrat,sans-serif;fill:var(--navy);text-anchor:middle;dominant-baseline:central}
+.placed .badge circle{fill:var(--navy);opacity:1}
+.placed .badge text{fill:#fff}
+.ghost{fill:none;stroke:var(--navy);stroke-width:2;stroke-dasharray:7 6;opacity:.38}
+.slot.hint .ghost{opacity:1;stroke:var(--purple);stroke-width:3;animation:pulse 1s ease-in-out infinite}
+.slot.hint .badge circle{opacity:1;stroke:var(--purple);stroke-width:3}
+@keyframes pulse{50%{stroke-opacity:.35}}
+.piece{opacity:0}
+.slot.placed .piece{opacity:1}
+.slot.placed .ghost{display:none}
+.slot.flash .piece{animation:flash .9s ease}
+@keyframes flash{30%{filter:brightness(1.25) drop-shadow(0 0 10px #fff)}}
+.extras{opacity:0;transition:opacity .8s}
+.done .extras{opacity:1}
+.wing{animation:flap .5s ease-in-out infinite alternate}
+.wing.r{animation-delay:0s}
+@keyframes flap{to{transform:scaleX(.5)}}
+.status{min-height:1.5em;text-align:center;font-weight:600;font-size:.88rem;margin:8px 0 4px}
+.tools{text-align:center;margin:0 0 6px}
+.tools[hidden]{display:none}
+.tools button{font:inherit;font-weight:700;font-size:.85rem;background:var(--navy);color:#fff;border:0;border-radius:999px;padding:8px 16px;cursor:pointer}
+button:focus-visible{outline:3px solid #f2b84b;outline-offset:3px}
+.tray{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:8px 4px}
+.card{all:unset;box-sizing:border-box;display:flex;flex-direction:column;gap:4px;position:relative;cursor:grab;padding:14px 9px 9px;border-radius:3px 3px 12px 3px;background:var(--c);box-shadow:0 3px 7px rgba(11,33,79,.22);transform:rotate(var(--r,0deg));transition:transform .2s,opacity .3s;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+.card::before{content:"";position:absolute;top:-8px;left:50%;width:38%;height:16px;transform:translateX(-50%) rotate(-2deg);background:rgba(255,255,255,.6);box-shadow:0 1px 2px rgba(11,33,79,.15)}
+.card:hover{transform:rotate(0) scale(1.03)}
+.card:focus-visible{outline:3px solid #f2b84b;outline-offset:3px}
+.card .n{font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;opacity:.75}
+.card .t{font-weight:700;font-size:.8rem;line-height:1.2}
+.card .d{font-size:.7rem;line-height:1.32}
+.card[aria-disabled=true]{opacity:.5;cursor:pointer;box-shadow:none}
+.card[aria-disabled=true] .n::after{content:" ✓"}
+.dragging{position:fixed;z-index:50;pointer-events:none;margin:0;transform:rotate(4deg) scale(1.04)!important;box-shadow:0 12px 24px rgba(11,33,79,.35);opacity:.95}
+@media(max-width:700px){.tray{grid-template-columns:repeat(2,1fr);gap:12px}.card .d{font-size:.68rem}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Build my collage</h1>
+<p class="sub" id="how">Drag each thought onto the board, or tap it, or press Enter on it. Each one becomes a piece of the same picture.</p>
+
+<div class="board" id="board">
+<svg id="svg" viewBox="0 0 900 520" role="img" aria-labelledby="svgtitle">
+<title id="svgtitle">A paper-cut collage scene, still empty.</title>
+<defs>
+<filter id="torn" x="-6%" y="-6%" width="112%" height="112%">
+<feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="4" result="n"/>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="5" xChannelSelector="R" yChannelSelector="G" result="d"/>
+<feDropShadow in="d" dx="2" dy="3" stdDeviation="2.2" flood-color="#0b214f" flood-opacity=".3"/>
+</filter>
+<filter id="grain" x="0" y="0" width="100%" height="100%">
+<feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="2" seed="9"/>
+<feColorMatrix values="0 0 0 0 .3  0 0 0 0 .25  0 0 0 0 .2  0 0 0 .9 -.35"/>
+</filter>
+<filter id="lift" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="1.5" dy="2.5" stdDeviation="1.5" flood-color="#0b214f" flood-opacity=".4"/></filter>
+<radialGradient id="glow" cx="50%" cy="60%" r="65%"><stop offset="0" stop-color="#fffbe0"/><stop offset=".6" stop-color="#ffe27a"/><stop offset="1" stop-color="#f6a35c"/></radialGradient>
+<pattern id="dots" width="9" height="9" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#0b214f" opacity=".08"/></pattern>
+</defs>
+
+<rect width="900" height="520" fill="#f6ecd8"/>
+<rect width="900" height="520" fill="url(#dots)"/>
+
+<!-- 1 SUN -->
+<g class="slot" id="s1"><circle class="ghost" cx="770" cy="105" r="82"/>
+<g class="piece" filter="url(#torn)"><polygon fill="#f2c94c" points="770,22 785,60 822,38 814,80 858,82 826,108 856,136 812,138 822,180 784,156 770,192 756,156 718,180 728,138 684,136 714,108 682,82 726,80 718,38 755,60"/><circle cx="770" cy="107" r="44" fill="#ef7d32"/><circle cx="770" cy="107" r="26" fill="#f6a35c"/></g>
+<g class="badge"><circle cx="770" cy="107" r="13"/><text x="770" y="107">1</text></g></g>
+
+<!-- 2 HILL -->
+<g class="slot" id="s2"><path class="ghost" d="M0,400 C120,350 260,330 450,345 C640,360 780,340 900,390"/>
+<g class="piece" filter="url(#torn)"><path fill="#d98aa6" d="M0,520 L0,400 C120,350 260,330 450,345 C640,360 780,340 900,390 L900,520Z"/><path fill="#c2708f" d="M0,520 L0,455 C200,418 420,445 900,425 L900,520Z"/><path fill="#8a5bb0" d="M0,520 L0,490 C260,470 560,500 900,478 L900,520Z"/></g>
+<g class="badge"><circle cx="48" cy="482" r="13"/><text x="48" y="482">2</text></g></g>
+
+<!-- 7 PATH (drawn before gate) -->
+<g class="slot" id="s7"><path class="ghost" d="M450,394 C462,430 440,448 462,478 C480,494 492,506 496,520"/>
+<g class="piece" filter="url(#torn)"><path fill="#f8efc9" d="M402,392 L498,392 C490,425 450,440 470,470 C486,492 520,506 548,520 L400,520 C396,500 420,486 424,468 C430,440 410,422 402,392Z"/><path fill="none" stroke="#c2708f" stroke-width="3" stroke-dasharray="2 10" stroke-linecap="round" d="M450,400 C462,432 440,450 462,480 C478,496 490,506 496,518"/></g>
+<g class="badge"><circle cx="470" cy="486" r="13"/><text x="470" y="486">7</text></g></g>
+
+<!-- 4 GATE -->
+<g class="slot" id="s4"><rect class="ghost" x="326" y="140" width="248" height="258" rx="8"/>
+<g class="piece" filter="url(#torn)"><path d="M338,392 V280 a112,112 0 0 1 224,0 V392Z" fill="#5cc4bd"/><path d="M350,392 V280 a100,100 0 0 1 200,0 V392Z" fill="#f2c94c"/><path d="M362,392 V280 a88,88 0 0 1 176,0 V392Z" fill="#ef7d32"/><path d="M374,392 V280 a76,76 0 0 1 152,0 V392Z" fill="#e8708f"/><path d="M388,392 V280 a62,62 0 0 1 124,0 V392Z" fill="url(#glow)"/>
+<polygon points="425,291 427.5,297.5 434,300 427.5,302.5 425,309 422.5,302.5 416,300 422.5,297.5" fill="#fff"/><polygon points="478,255 480.0,260.0 485,262 480.0,264.0 478,269 476.0,264.0 471,262 476.0,260.0" fill="#fff"/><polygon points="458,330 459.4,333.6 463,335 459.4,336.4 458,340 456.6,336.4 453,335 456.6,333.6" fill="#fff"/><polygon points="414,352 415.1,354.9 418,356 415.1,357.1 414,360 412.9,357.1 410,356 412.9,354.9" fill="#f48fb1"/><polygon points="490,313 491.4,316.6 495,318 491.4,319.4 490,323 488.6,319.4 485,318 488.6,316.6" fill="#f48fb1"/>
+<polygon points="450,150 458,170 478,170 462,182 468,202 450,190 432,202 438,182 422,170 442,170" fill="#f2c94c" stroke="#ef7d32" stroke-width="2"/>
+<rect x="328" y="388" width="244" height="10" rx="3" fill="#8a5bb0"/></g>
+<g class="badge"><circle cx="450" cy="226" r="13"/><text x="450" y="226">4</text></g></g>
+
+<!-- 3 TREE -->
+<g class="slot" id="s3"><rect class="ghost" x="34" y="160" width="152" height="248" rx="14"/>
+<g class="piece" filter="url(#torn)"><g transform="translate(0,8)">
+<path d="M84,402 C98,396 100,386 100,372 L120,372 C120,386 124,396 138,402Z" fill="#7a4a2a"/>
+<path d="M110,380 C100,350 122,334 110,306 C102,286 120,272 112,252" stroke="#7a4a2a" stroke-width="17" fill="none" stroke-linecap="round"/>
+<path d="M112,326 C132,318 146,304 150,288 M108,300 C92,292 82,280 78,264" stroke="#7a4a2a" stroke-width="8" fill="none" stroke-linecap="round"/>
+<path d="M104,352 c10,-6 12,8 2,9 M110,322 c8,-5 10,6 2,8" stroke="#c2956a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+<circle cx="74" cy="236" r="34" fill="#2f9e8f"/><circle cx="148" cy="236" r="34" fill="#2f9e8f"/><circle cx="110" cy="198" r="46" fill="#5cc4bd"/><circle cx="110" cy="240" r="42" fill="#5cc4bd"/><circle cx="78" cy="206" r="22" fill="#8fd3c9"/>
+<g fill="#f48fb1"><circle cx="92" cy="190" r="7"/><circle cx="132" cy="206" r="7"/><circle cx="70" cy="240" r="6"/><circle cx="150" cy="240" r="6"/><circle cx="110" cy="170" r="6"/></g>
+<g fill="#ef7d32"><circle cx="90" cy="260" r="8"/><circle cx="130" cy="262" r="8"/><circle cx="112" cy="222" r="7"/></g>
+<polygon points="146,204 150,214 160,216 150,220 146,230 142,220 132,216 142,214" fill="#f2c94c"/>
+<polygon points="66,196 69,203 76,205 69,208 66,215 63,208 56,205 63,203" fill="#f2c94c"/>
+<path d="M60,282 C54,300 70,312 64,330" stroke="#0b214f" stroke-width="2" stroke-dasharray="2 7" fill="none" stroke-linecap="round" opacity=".5"/></g></g>
+<g class="badge"><circle cx="110" cy="250" r="13"/><text x="110" y="250">3</text></g></g>
+
+<!-- 6 SWALLOW -->
+<g class="slot" id="s6"><rect class="ghost" x="163" y="58" width="194" height="150" rx="10"/>
+<g class="piece" filter="url(#torn)"><g transform="translate(55,22)">
+<path d="M126,168 C150,170 170,164 188,152 M120,184 C148,186 172,178 196,164" stroke="#0b214f" stroke-width="2.5" stroke-dasharray="3 9" stroke-linecap="round" fill="none" opacity=".45"/>
+<path d="M246,114 C238,86 216,60 186,40 C206,72 214,98 220,120Z" fill="#14306e"/>
+<polygon points="190,126 114,106 152,132 118,158 192,138" fill="#1f3f8f"/>
+<path d="M176,128 C190,108 232,106 260,114 C272,118 278,124 278,128 C264,140 224,148 176,132Z" fill="#1f3f8f"/>
+<path d="M190,136 C220,140 250,138 272,130 C262,142 226,150 190,138Z" fill="#fff3d6"/>
+<ellipse cx="268" cy="129" rx="9" ry="5" fill="#d9603b"/>
+<path d="M238,120 C212,98 178,76 136,64 C168,82 188,108 204,132Z" fill="#2f5fc0"/>
+<path d="M226,118 C206,102 184,88 160,78" stroke="#14306e" stroke-width="2" fill="none" opacity=".5"/>
+<polygon points="277,124 294,128 277,132" fill="#0b214f"/>
+<circle cx="266" cy="120" r="4" fill="#fff"/><circle cx="267" cy="120" r="2" fill="#0b214f"/></g></g>
+<g class="badge"><circle cx="277" cy="154" r="13"/><text x="277" y="154">6</text></g></g>
+
+<!-- 8 SIGNPOST -->
+<g class="slot" id="s8"><rect class="ghost" x="553" y="254" width="136" height="150" rx="8"/>
+<g class="piece" filter="url(#torn)"><g transform="translate(-30,0)"><rect x="645" y="270" width="12" height="130" fill="#7a4a2a"/><polygon points="620,284 692,284 710,300 692,316 620,316" fill="#0b214f"/><polygon points="684,326 612,326 594,342 612,358 684,358" fill="#0e7c86"/><text x="634" y="305" font-family="Anton,sans-serif" font-size="14" fill="#fff" letter-spacing="1">GUIDE</text><text x="624" y="347" font-family="Anton,sans-serif" font-size="14" fill="#fff" letter-spacing="1">OPEN</text></g></g>
+<g class="badge"><circle cx="621" cy="264" r="13"/><text x="621" y="264">8</text></g></g>
+
+<!-- 5 SCALES -->
+<g class="slot" id="s5"><rect class="ghost" x="700" y="236" width="180" height="170" rx="8"/>
+<g class="piece" filter="url(#torn)"><rect x="796" y="262" width="8" height="128" fill="#0b214f"/><polygon points="772,400 828,400 818,384 782,384" fill="#0b214f"/><rect x="735" y="262" width="130" height="8" rx="4" fill="#0b214f"/><circle cx="800" cy="262" r="9" fill="#f2c94c"/><path d="M737,268 L717,330 M737,268 L757,330 M863,268 L843,330 M863,268 L883,330" stroke="#0b214f" stroke-width="2" fill="none"/><path d="M707,330 Q737,358 767,330Z" fill="#5cc4bd"/><path d="M833,330 Q863,358 893,330Z" fill="#f48fb1"/></g>
+<g class="badge"><circle cx="800" cy="243" r="13"/><text x="800" y="243">5</text></g></g>
+
+<!-- Finale extras -->
+<g class="extras" id="extras" aria-hidden="true">
+<g id="title"></g>
+<g transform="translate(300,260) rotate(-14)"><g class="wing"><path d="M0,0 C-18,-24 -36,-6 -24,10 C-16,20 -4,12 0,0Z" fill="#ef7d32" stroke="#0b214f" stroke-width="2"/></g><g class="wing"><path d="M0,0 C18,-24 36,-6 24,10 C16,20 4,12 0,0Z" fill="#ef7d32" stroke="#0b214f" stroke-width="2"/></g><ellipse cx="0" cy="3" rx="2.5" ry="9" fill="#0b214f"/></g>
+<g transform="translate(600,150) rotate(12)"><g class="wing"><path d="M0,0 C-18,-24 -36,-6 -24,10 C-16,20 -4,12 0,0Z" fill="#f48fb1" stroke="#0b214f" stroke-width="2"/></g><g class="wing"><path d="M0,0 C18,-24 36,-6 24,10 C16,20 4,12 0,0Z" fill="#f48fb1" stroke="#0b214f" stroke-width="2"/></g><ellipse cx="0" cy="3" rx="2.5" ry="9" fill="#0b214f"/></g>
+<g transform="translate(268,350) rotate(-6)"><g class="wing"><path d="M0,0 C-14,-19 -28,-5 -19,8 C-13,16 -3,10 0,0Z" fill="#f2c94c" stroke="#0b214f" stroke-width="2"/></g><g class="wing"><path d="M0,0 C14,-19 28,-5 19,8 C13,16 3,10 0,0Z" fill="#f2c94c" stroke="#0b214f" stroke-width="2"/></g><ellipse cx="0" cy="2" rx="2" ry="7" fill="#0b214f"/></g>
+</g>
+<rect width="900" height="520" filter="url(#grain)" opacity=".5" style="mix-blend-mode:multiply;pointer-events:none"/>
+</svg>
+</div>
+
+<p class="status" id="status" role="status" aria-live="polite">0 of 8 pieces placed.</p>
+<div class="tools" id="tools" hidden><button id="reset" type="button">Take it apart and start again</button></div>
+<div class="tray" id="tray"></div>
+</div>
+
+<script>
+/* Edit the thoughts here. Keep the ids 1 to 8; each one is tied to a piece of the picture. */
+var THOUGHTS = [
+ {id:1, entry:"Entry 1", piece:"the sun", title:"Every mode is a choice", text:"Text, image, audio, video or interaction: none of them is neutral. Each choice is a design judgement.", c:"#ffe27a"},
+ {id:2, entry:"Entry 2", piece:"the hill", title:"Affordances are only potential", text:"A tool helps only if learners are guided to use it as intended. Otherwise the affordance is wasted.", c:"#ffc2d1"},
+ {id:3, entry:"Entry 3", piece:"the tree", title:"Feeling shapes learning", text:"A frustrating tool can drain motivation even when the content is manageable.", c:"#aee6df"},
+ {id:4, entry:"Entry 4", piece:"the gate", title:"Give learners many ways in", text:"UDL gave me options, but a good idea also has to survive real workload, time and people.", c:"#d9cbf7"},
+ {id:5, entry:"Entry 5", piece:"the scales", title:"Cutting load can cut access", text:"CTML and UDL each fix a problem the other can create. I try to hold both.", c:"#ffcfa5"},
+ {id:6, entry:"Entry 6", piece:"the swallow", title:"Every feature must earn its place", text:"The agent had to justify itself against the theory. Noticing the cost made my design more considered.", c:"#ffe27a"},
+ {id:7, entry:"Entry 7", piece:"the path", title:"Build the map before anyone walks it", text:"Learning my own tools showed me where facilitators will struggle, so I planned their path first.", c:"#ffc2d1"},
+ {id:8, entry:"Entry 8", piece:"the signpost", title:"Guide the process, leave the meaning open", text:"Fix the structure, such as where the AI-free and AI-mediated phases sit, and leave the content to the facilitators.", c:"#aee6df"}
+];
+var FINAL_WORDS = "still becoming";
+var FINAL_MESSAGE = "That is the whole picture, for now. Like this journal, it is not a final thought. I would rearrange it every time I learn something new.";
+
+var svg=document.getElementById("svg"), board=document.getElementById("board"), tray=document.getElementById("tray");
+var statusEl=document.getElementById("status"), resetBtn=document.getElementById("reset"), svgTitle=document.getElementById("svgtitle");
+var placed={}, count=0, reduce=window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+var anchors={1:[770,107],2:[450,440],3:[110,250],4:[450,226],5:[800,243],6:[277,154],7:[470,486],8:[621,264]};
+var rot=[-1.5,1.2,-.8,1.6,-1.2,.9,-1.6,1.1];
+
+THOUGHTS.forEach(function(t,i){
+  var b=document.createElement("button"); b.type="button"; b.className="card"; b.id="c"+t.id;
+  b.style.setProperty("--c",t.c); b.style.setProperty("--r",rot[i]+"deg");
+  b.innerHTML='<span class="n">'+t.id+' · '+t.entry+'</span><span class="t">'+t.title+'</span><span class="d">'+t.text+'</span>';
+  b.setAttribute("aria-label",t.entry+": "+t.title+". "+t.text+" Press Enter to place it on the board as "+t.piece+".");
+  tray.appendChild(b);
+  b.addEventListener("pointerenter",function(){ if(!placed[t.id]) slot(t.id).classList.add("hint"); });
+  b.addEventListener("pointerleave",function(){ slot(t.id).classList.remove("hint"); });
+  b.addEventListener("focus",function(){ if(!placed[t.id]) slot(t.id).classList.add("hint"); });
+  b.addEventListener("blur",function(){ slot(t.id).classList.remove("hint"); });
+  b.addEventListener("click",function(){ if(b._dragged){b._dragged=false;return;} place(t.id,null); });
+  b.addEventListener("pointerdown",function(e){ startDrag(e,b,t.id); });
+});
+function slot(id){return document.getElementById("s"+id);}
+
+function place(id,from){
+  if(placed[id]){ var s0=slot(id); s0.classList.remove("flash"); void s0.getBoundingClientRect(); s0.classList.add("flash"); return; }
+  placed[id]=true; count++;
+  var s=slot(id); s.classList.remove("hint"); s.classList.add("placed");
+  var card=document.getElementById("c"+id); card.setAttribute("aria-disabled","true");
+  var piece=s.querySelector(".piece");
+  if(!reduce && piece.animate){
+    var a=anchors[id], p=from||a, dx=p[0]-a[0], dy=p[1]-a[1];
+    if(!from){ dx=(Math.random()<.5?-1:1)*60; dy=-90; }
+    piece.style.transformBox="fill-box"; piece.style.transformOrigin="center";
+    piece.animate([{transform:"translate("+dx+"px,"+dy+"px) rotate(-14deg) scale(.5)",opacity:0},{transform:"none",opacity:1}],{duration:650,easing:"cubic-bezier(.2,1.25,.4,1)"});
+  }
+  var t=THOUGHTS[id-1];
+  statusEl.textContent=count+" of 8 pieces placed. "+t.entry+" became "+t.piece+": "+t.title+".";
+  var names=THOUGHTS.filter(function(x){return placed[x.id];}).map(function(x){return x.piece;});
+  svgTitle.textContent="A paper-cut collage scene. Pieces placed so far: "+names.join(", ")+".";
+  document.getElementById("tools").hidden=false;
+  if(count===8) finish();
+}
+
+function finish(){
+  var g=document.getElementById("title");
+  if(!g.firstChild){
+    var fonts=["Abril Fatface","Special Elite","Anton","Abril Fatface"], cols=["#f6d9e0","#f2c94c","#5cc4bd","#8a5bb0","#ef7d32","#7a2c4a"], txt=["#7a2c4a","#0b214f","#0b214f","#fff","#fff","#fff"];
+    var x=270, i=0;
+    FINAL_WORDS.split("").forEach(function(ch){
+      if(ch===" "){ x+=14; return; }
+      var k=i%6, r=((i*37)%13)-6;
+      var gr=document.createElementNS("http://www.w3.org/2000/svg","g");
+      gr.setAttribute("transform","translate("+x+",36) rotate("+r+")");
+      gr.setAttribute("filter","url(#lift)");
+      gr.innerHTML='<rect x="-17" y="-24" width="35" height="46" fill="'+cols[k]+'"/><text x="0" y="0" text-anchor="middle" dominant-baseline="central" font-family="'+fonts[i%4]+'" font-size="34" font-weight="700" fill="'+txt[k]+'">'+ch+'</text>';
+      g.appendChild(gr); x+=34; i++;
+    });
+  }
+  board.classList.add("done");
+  svg.classList.add("done");
+  setTimeout(function(){ statusEl.textContent=FINAL_MESSAGE; },900);
+}
+resetBtn.addEventListener("click",function(){
+  placed={}; count=0; svg.classList.remove("done"); board.classList.remove("done");
+  document.querySelectorAll(".slot").forEach(function(s){s.classList.remove("placed","flash","hint");});
+  document.querySelectorAll(".card").forEach(function(c){c.removeAttribute("aria-disabled");});
+  statusEl.textContent="0 of 8 pieces placed."; svgTitle.textContent="A paper-cut collage scene, still empty."; document.getElementById("tools").hidden=true;
+});
+/* the .done class needs to sit on the svg wrapper for the extras */
+var st=document.createElement("style"); st.textContent=".done .extras,svg.done .extras{opacity:1}"; document.head.appendChild(st);
+
+function toSvg(cx,cy){ var pt=svg.createSVGPoint(); pt.x=cx; pt.y=cy; var m=svg.getScreenCTM(); if(!m) return null; var q=pt.matrixTransform(m.inverse()); return [q.x,q.y]; }
+function startDrag(e,card,id){
+  if(e.pointerType==="touch"||e.button!==0||placed[id]) return;
+  var sx=e.clientX, sy=e.clientY, ghost=null, r=card.getBoundingClientRect(), moved=false;
+  function mv(ev){
+    if(!moved && Math.hypot(ev.clientX-sx,ev.clientY-sy)<6) return;
+    if(!moved){ moved=true; ghost=card.cloneNode(true); ghost.removeAttribute("id"); ghost.classList.add("dragging"); ghost.style.width=r.width+"px"; document.body.appendChild(ghost); }
+    ghost.style.left=(ev.clientX-r.width/2)+"px"; ghost.style.top=(ev.clientY-20)+"px";
+    var b=board.getBoundingClientRect(); board.classList.toggle("over",ev.clientX>b.left&&ev.clientX<b.right&&ev.clientY>b.top&&ev.clientY<b.bottom);
+  }
+  function up(ev){
+    window.removeEventListener("pointermove",mv); window.removeEventListener("pointerup",up);
+    board.classList.remove("over");
+    if(!moved) return;
+    card._dragged=true; setTimeout(function(){card._dragged=false;},0);
+    ghost.remove();
+    var b=board.getBoundingClientRect();
+    if(ev.clientX>b.left&&ev.clientX<b.right&&ev.clientY>b.top&&ev.clientY<b.bottom){ place(id,toSvg(ev.clientX,ev.clientY)); }
+  }
+  window.addEventListener("pointermove",mv); window.addEventListener("pointerup",up);
+}
+</script>
+</body>
+</html>
