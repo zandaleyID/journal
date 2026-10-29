@@ -1,8 +1,7 @@
 title: Start here
 subtitle: A multimodal reflective journal on learning with media.
 ---
-This journal follows how my thinking changed as I worked with theories of multimedia learning, universal design, and instructional design. Each entry mixes writing with other modes: diagrams, animations, interactive pages, videos, and recordings. Each entry ends with a final thought and a question for you.
-
+This journal follows how my thinking changed as I worked with theories of multimedia learning, universal design, and instructional design. Each entry mixes writing with other modes, such as diagrams, animations, interactive pages, videos, and recordings. 
 ## How to move around
 Use the contents on the left to open an entry, or the Previous and Next buttons at the bottom of each page. On a phone, open the contents with the menu button at the top left.
 
@@ -12,10 +11,10 @@ Choose **Accessibility** in the top bar to change how the journal looks and soun
 - **Listen:** have an entry read aloud, including the descriptions of the images. You can pause, change the speed and choose a voice.
 - **Reading:** make the text larger, widen the line spacing, or switch to an easier-to-read font.
 - **Display:** light, dark or high contrast, and a switch to pause every animation.
-- **Media:** every image and animation has a text description. Each animation has its own pause button. Videos have captions, and the interactive pages come with a text description beside them.
+- **Media:** every image and animation has a text description. Each animation has its own pause button. Videos have captions, and the interactive pages come with a text description beside them. For improved readability, opening interactive artefacts in a new tab is recommended. 
 
 [note]
-**How I worked.** I used an AI thinking partner (Claude) and NotebookLM while building these entries, to explore sources, question my reasoning and test drafts. The reflections and design decisions are my own.
+**How I worked.** I used Claude (Anthropic, 2026) as an AI thinking partner while developing these entries and most of the accompanying artefacts. It supported me in exploring sources, questioning my reasoning, and extending the creative range of my designs. The reflections, choices of mode and design decisions presented here are my own.
 [/note]
 
 When you are ready, open the first entry from the contents.
