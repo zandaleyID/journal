@@ -6,9 +6,11 @@ banner: assets/banner-entry-8.jpg
 banner-alt: The word "pathways" in cut-out magazine letters over a surreal collage. A giant hand reaches through a round golden mirror in a red rock canyon and holds a small yellow vintage car on a winding road.
 banner-caption: Entry 7 banner (Indieground Design, 2024; Bothma, 2026).
 ---
-This entry looks at how I built the storyboard for PP2, the tool I used, and something the tool showed me about my own design. Instead of a storyboard, I created a detailed wireframe, took screenshots of it, labelled the transitions between slides and added a few annotations. I did this to make the learning path as explicit as possible, including what facilitators do, how they progress and interact with the course, not just what the course contains. I over-annotated at first and had to condense it so the path stayed clear, which also made it much easier to write about afterwards.
+This entry looks at how I built the storyboard for PP2, the tool I used, and something the tool showed me about my own design. Instead of a storyboard, I created a detailed wireframe, took screenshots of it, labelled the transitions between slides, and added annotations. I did this to make the learning path as explicit as possible, including what facilitators do, how they progress and interact with the course, not just what the course contains. 
 
-The authoring tool I used to create the wireframe was Whimsical. It doesn’t offer a foundational walkthrough, so I needed to look for tutorials and guidance at the start, but once I knew where things were, it became easier to use. The endless frames mattered most to me. I could design several options in one place and move them around instead of working one page per frame, and that was an affordance (Day and Lloyd, 2007) I actually used.
+The authoring tool I used to create the wireframe was Whimsical. It didn't offer a foundational walkthrough, so I needed to look for tutorials and guidance at the start, but once I became familiar with the layout, it was easier to use.
+
+Explore the wireframe for the submitted PP2 storyboard in more detail: 
 
 [embed]
 url: https://whimsical.com/embed/Wb37u6ZoWD12krxNvRUqBb?color-mode=system
@@ -17,9 +19,9 @@ caption: Figure 1. The PP2 wireframe in Whimsical. Click and drag to move around
 description: An overview of the whole PP2 wireframe on a Whimsical canvas, as 16 numbered screens in two rows. The top row covers Unit 1: the CoTrace landing page, the dashboard, the Unit 1 "Navigating the Platform" screen, a new assignment screen, the Explore, Draft and Refine phase screens, a section complete screen, a submission screen and a platform navigation assessment. The bottom row starts with a transition screen titled "Unit 2: From Correcting to Guiding", followed by two Unit 2 screens (paired transcripts and a mock student response), two Unit 3 screens (a rubric and a holistic evaluation) and two Unit 4 screens (a think-aloud activity and a task design worksheet).
 [/embed]
 
-However, something I only noticed while reflecting is that I had to learn Whimsical independently, and I had built the Unit 1 walkthrough for a similar reason – so that facilitators could learn the platform at a practical level before moving on to the pedagogy. I made this the foundational unit because it made sense to me, and the Whimsical experience only showed me why afterwards.
+Something I only noticed while reflecting is that I had to learn Whimsical independently, and I had built the Unit 1 walkthrough for a similar reason – so that facilitators could learn the platform at a practical level before moving on to the pedagogy. I made this the foundational unit because it made sense to me, but my experience with Whimsical later helped me understand why that step held value. 
 
-I imagine my personal experience learning how to use Whimsical and facilitators' potential experience learning how to use CoTrace following the same pattern. Select a numbered stop on the interactive diagram below to read about these journeys at your own pace.
+I imagine my personal experience learning how to use Whimsical and facilitators' potential experience learning how to use CoTrace following the same pattern. Select a numbered stop on the interactive diagram below to explore these journeys at your own pace.
 
 [embed]
 url: roadmap-hotspots.html
@@ -29,19 +31,17 @@ caption: Figure 2. Learning Whimsical and learning CoTrace follow the same patte
 description: Two winding roads, one above the other, each with a small yellow car and three stops numbered 1 to 3. Top road, my experience of learning Whimsical. Stop 1: unfamiliar tool, no built-in walkthrough. Stop 2: tutorials and guidance to find where things were. Stop 3: easier to use, so I could focus on the design. Lower road, facilitators learning CoTrace. Stop 1: unfamiliar platform, new to its tools. Stop 2: Unit 1 walkthrough, practical platform skills. Stop 3: then they can focus on the pedagogy. Dashed lines connect each pair of matching stops, 1 to 1, 2 to 2 and 3 to 3. A road sign at the bottom reads: practical competence first, pedagogical thinking second. Selecting a stop, or its numbered button below the map, opens a pop-up next to it with the text.
 [/embed]
 
-It also made me see that how a course is structured should be communicated at the start, so that learners know what to expect from their own path. Biggs and Tang (2007) describe goals made clear upfront and advance organisers that give learners a framework to fit new material into. Wang et al. (2013) report students who were confused and frustrated when they weren’t sure what was expected of them, and Laubscher and Bosch (2020, citing Hammarlund et al., 2015) note that communicating information early supports motivation and planning. I would now treat making the learning path clear from the start as a deliberate design decision.
+Final thoughts
+Looking back, building the wireframe made the learning path explicit for facilitators, and it also showed me that I had already walked a similar path myself. I needed practical competence in Whimsical before I could focus on the design, just as facilitators build practical competence in Unit 1 before moving on to the pedagogy. Moving forward, I will treat that order, practical competence first and pedagogical thinking second, as a deliberate design decision. It resembles the pre-training principle in CTML, where learners cope better with a lesson once they already know its key components (Mayer, 2024).
 
 [question]
-text: Think of the last course you took. Was it clear at the start what path you’d follow, or did you figure it out as you went?
-reply: Thank you for sharing. Knowing the path early can take a lot of weight off, and noticing when you didn’t have it is part of designing well.
-[/question]
+   text: Think of the last tool or platform you had to learn. Did you need to get comfortable with it before you could focus on what you actually wanted to do?
+   reply: Thank you for sharing. Getting comfortable with a tool first is often what makes room for the real thinking.
+   [/question]
 
 [references]
 Anthropic, 2026. Claude (Sonnet 5.5) [Large language model]. Available at: https://claude.ai [Accessed 13 October 2026].
-Biggs, J. and Tang, C., 2007. *Teaching for quality learning at university: What the student does*. [e-book] 3rd ed. Maidenhead: Open University Press. Available at: <https://www.academia.edu/39702208/Teaching_for_Quality_Learning_at_University> [Accessed 21 September 2026].
-Day, D. and Lloyd, M., 2007. Affordances of online technologies: More than the properties of the technology. *Australian Educational Computing*, [e-journal] 22(2), pp.17-21. Available at: <https://www.researchgate.net/publication/27476254_Affordances_of_online_technologies_More_than_the_properties_of_the_technology> [Accessed 20 September 2026].
-Laubscher, D. and Bosch, C., 2020. A systematic literature review to probe design guidelines for a self-directed blended learning environment. In: J. Olivier, ed. 2020. *Self-directed multimodal learning in higher education*. Cape Town: AOSIS. pp.117-163.
-Wang, X., Su, Y., Cheung, S., Wong, E. and Kwong, T., 2013. An exploration of Biggs' constructive alignment in course design and its impact on students' learning approaches. *Assessment & Evaluation in Higher Education*, [e-journal] 38(4), pp.477-491. doi:10.1080/02602938.2012.658018.
+Mayer, R.E., 2024. The past, present, and future of the cognitive theory of multimedia learning. Educational Psychology Review, [e-journal] 36(8). doi:10.1007/s10648-023-09842-1.
 [/references]
 
 [image-references]
