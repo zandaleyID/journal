@@ -6,7 +6,7 @@ banner: assets/banner-entry-4.jpg
 banner-alt: The word "Affect" in cut-out letters over a collage of faces, eyes and mouths showing different expressions, with scribbled red lines and curved printed text around them.
 banner-caption: Entry 3 banner (AnMark, 2024; Bothma, 2026).
 ---
-I'm doing an online course, and an interactive activity asks for my own take on a core idea. It offers a voice function, and I'd much rather speak than type. Here's what happens:
+I'm doing an online course, and an interactive activity asks for my own take on a core idea. It offers a voice function, and I generally prefer speaking into these tools over typing. Here's what happens:
 
 [embed]
 url: https://drive.google.com/file/d/1_FgL4CrzOgsoOWlP8LgyquSx9Tw1rQqm/view?usp=drive_link
@@ -15,9 +15,9 @@ caption: Figure 1. "Lost in Transcription": a learner answers an AI tool's quest
 description: A learner answers an AI tool's question via voice function. The tool mishears them, asks them to repeat it, and mishears again, until the learner gives up out of frustration. The video is titled "Lost in Transcription" and runs for 54 seconds.
 [/embed]
 
-This frustration is what Moreno's Cognitive-Affective Theory of Learning with Media (CATLM) adds to the CTML critique I did for Assignment 1. Where CTML explains how we process multimedia information through dual channels, CATLM argues that motivation, emotion, and individual learner differences mediate how effectively that processing happens (Moreno, 2006). Looking back at the Coursera AI course I critiqued, when the voice recognition tool malfunctioned, my motivation to keep engaging with the AI dialogue dropped because the experience with the tool itself was frustrating. In CATLM terms, the tool's failure to recognise my voice was a barrier to engagement, not to understanding, which shows that a feature can fail a learner without the content being at fault (Moreno, 2006).
+This frustration is what Moreno's Cognitive-Affective Theory of Learning with Media (CATLM) adds to the CTML critique I did for Assignment 1. Where CTML explains how we process multimedia information through dual channels, CATLM argues that motivation, emotion, and individual learner differences mediate how effectively that processing happens (Moreno, 2006). Looking back at the Coursera AI course, when the voice recognition tool malfunctioned, my motivation to keep engaging with the AI dialogue dropped because the experience with the tool itself was frustrating. In CATLM terms, the tool's failure to recognise my voice was a barrier to engagement, not to understanding, which shows that a feature can fail a learner even without the content being at fault (Moreno, 2006).
 
-The course's Critical Thinking Framework (CTF) presented the reverse problem: media missing rather than media distracting. It's a five-step process, but it was only ever explained through text and narrated video. Because it's sequential and spatial, a diagram with a worked example would have conveyed it more efficiently (Mayer, 2024). I finished the course unclear on what the CTF looked like in reality, and I suspect that gap carried into my confusion during the PPE later on. So I recreated it, with an AI decision of my own worked through each step:
+The course's Critical Thinking Framework (CTF) presented the reverse problem, with media missing rather than media distracting. The framework is presented as a five-step process, but it was only ever explained through text and narrated video. Given its sequential nature, a diagram with a worked example would have conveyed it more efficiently (Mayer, 2024). I finished the course unclear on what the CTF looked like in reality. For this reason, I decided to recreate it visually, with an AI decision of my own worked through each step:
 
 [figure]
 image: assets/ctf-in-practice.png
@@ -27,7 +27,7 @@ description: Step 1, Recognise Assumptions ("What am I taking for granted?"): I 
 [/figure]
 
 ## Final thoughts
-The voice tool showed me that a frustrating experience can drain motivation even when the content is manageable, which is what CATLM adds to CTML. The AI course's CTF presented a sequential process through text alone, when a diagram would have made its structure clearer. In both instances, the way the media was designed affected how effectively learning could take place.
+The voice tool demonstrated how a frustrating experience can drain motivation even when the content is manageable, which is what CATLM adds to CTML. The AI course's CTF presented a sequential process through text alone, when a diagram would have made its structure clearer. In both instances, the design of the instructional resources affected how effectively learning could take place, which shows why modes of presentation and engagement need to be chosen deliberately.
 
 [question]
 text: Has a frustrating tool ever put you off learning something you actually wanted to learn?
@@ -40,5 +40,6 @@ Moreno, R., 2006. Learning in high-tech and multimedia environments. *Current Di
 [/references]
 
 [image-references]
+Bothma, 2026. *CTF Diagram* [Canva design]. Available at: <https://canva.link/5ghhjc1yux01jep>.
 AnMark, 2024. *Emotions. Collage & Illustrations* [online graphic]. Available at: <https://creativemarket.com/anmark/14489384-Emotions.-Collage-Illustrations> [Accessed 19 October 2026].
 [/image-references]
