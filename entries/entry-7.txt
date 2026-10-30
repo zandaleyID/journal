@@ -5,13 +5,13 @@ banner: assets/banner-entry-7.jpg
 banner-alt: The word "presence" in cut-out magazine letters over a surreal collage. A large hand points in from the left, a megaphone floats at the top, a classical marble bust and two statues stand in the centre, and a tall metallic humanoid figure stands against a pink pyramid on the right.
 banner-caption: Entry 6 banner (Bothma, 2026).
 ---
-Entries 4 and 5 kept returning to the question of whether the modes, activities and assessments actually work together, or if something has been added simply because it was available. I tested two of my PP2 decisions against this - the video comparison and the pedagogical agent.
+Entries 4 and 5 kept returning to the question of whether the modes, activities and assessments actually work together, or if something has been added simply because it was available. I revisited this through two PP2 design decisions, the video comparison and the pedagogical agent.
 
 ## The video comparison
-One learning outcome asks facilitators to differentiate between a behaviourist, answer-checking response and a Socratic, guiding one. I proposed two videos to show this contrast because the difference sits in tone, pacing, and body language, which text alone cannot convey as effectively. Social semiotics describes how meaning is made across modes and changes when it moves between them (Kress et al., 2014). The mode/s chosen should serve the outcome, give those new to the role something to model on, and represent their real setting. The activity concluded with facilitators annotating the transcripts, which turns watching into analysing and gives them more than one way to engage.
+One learning outcome asks facilitators to distinguish between behaviourist, answer-checking responses and Socratic, guiding responses. I proposed two videos because, as social semiotics suggests, each mode carries meaning differently (Kress et al., 2014), and tone, pacing, and body language communicate this contrast more effectively than text alone. The videos also provide realistic examples for novices to model (Ertmer and Newby, 2013), while transcript annotation turns viewing into active analysis.
 
 ## The gap I found
-What I missed was accessibility. I chose video for the tone, pacing, and body language, and a facilitator who cannot access the audio or visuals loses exactly those. The transcript gives the wording, but none of the cues, and UDL’s principle of multiple means of representation (Ralabate, 2011) shows the gap. Adding stage directions, such as “says slowly”, could narrow it, but that describes the cue rather than conveying it, which narrows the gap, but doesn't fully close it. 
+What I missed was accessibility. Facilitators unable to access the audio or visuals would miss some of the meaning conveyed by the videos (Ralabate, 2011). A transcript captures the wording, while stage directions only describe the missing cues. Captions with non-speech information, audio description, and a descriptive transcript could offer closer alternatives. I would also want to test these with the facilitators who rely on them. Although the alternatives may not be fully equivalent to video, the aim of UDL’s multiple means of representation is to ensure that everyone can access the same meaning, even through different experiences.
 
 Try it for yourself below. The same student question is answered in two ways, and you can choose how to access each answer.
 
@@ -24,9 +24,9 @@ description: A mock student says, “I wrote that the study proves social media 
 [/embed]
 
 ## The agent
-In Unit 1, the agent is prominent because that is where facilitators learn the platform through a guided walkthrough, and it is there to assist facilitators where the module falls short (Moreno and Mayer, 2007). In Units 2 to 4, it shrinks to a small icon, so that facilitators know it is there but it is not front and centre. My concern was behavioural, and that an always-prominent agent might become the answer to everything instead of being used as an assistive tool.
+In Unit 1, the agent is prominent because that is where facilitators learn the platform through a guided walkthrough, and it is there to provide support where the module falls short (Moreno and Mayer, 2007). In Units 2 to 4, it shrinks to a small icon, remaining available without dominating the learning experience. I was concerned that keeping it prominent throughout might encourage facilitators to rely on it for every answer rather than use it as an assistive tool.
 
-The theory supports this caution. Extraneous features can use up limited working memory (Moreno and Mayer, 2007), and interactivity can pull attention to "seductive details" instead of important details for learning (Garner, 1989, as cited in Renkl and Atkinson, 2007, p. 236). Additonally, engaging affordance can become a distraction when the learning context lacks structure (Day and Lloyd, 2007). None of these sources addresses an agent’s size, so applying that logic here is my own design judgment.
+The theory supports this caution. Extraneous features can use up limited working memory (Moreno and Mayer, 2007), and interactivity can pull attention to "seductive details" instead of key learning content (Garner, 1989, as cited in Renkl and Atkinson, 2007, p. 236). Engaging affordances can also become distractions when the learning context lacks structure (Day and Lloyd, 2007). None of these sources specifically addresses an agent’s size, so applying these principles to its visual prominence is my own design judgement.
 
 [figure]
 image: assets/agent-mockup.png
