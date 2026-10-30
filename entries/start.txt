@@ -8,13 +8,13 @@ Use the contents on the left to open an entry, or the Previous and Next buttons 
 ## Ways to read, listen and explore
 Choose **Accessibility** in the top bar to change how the journal looks and sounds.
 
-- **Listen:** have an entry read aloud, including the descriptions of the images. You can pause, change the speed and choose a voice.
+- **Listen:** have an entry read aloud, including the descriptions of the images. You can pause, change the speed, and choose a voice.
 - **Reading:** make the text larger, widen the line spacing, or switch to an easier-to-read font.
-- **Display:** light, dark or high contrast, and a switch to pause every animation.
+- **Display:** light, dark, or high contrast, and a switch to pause every animation.
 - **Media:** every image and animation has a text description. Each animation has its own pause button. Videos have captions, and the interactive pages come with a text description beside them. For improved readability, opening interactive artefacts in a new tab is recommended. 
 
 [note]
-**How I worked.** I used Claude (Anthropic, 2026) as an AI thinking partner while developing these entries and most of the accompanying artefacts. It supported me in exploring sources, questioning my reasoning, and extending the creative range of my designs. The reflections, choices of mode and design decisions presented here are my own.
+**How I worked.** I used Claude (Anthropic, 2026) as an AI thinking partner while developing these entries and most of the accompanying artefacts. It supported me in exploring sources, questioning my reasoning, and extending the creative range of my designs. The reflections, choices of mode, and design decisions presented here are my own.
 [/note]
 
 When you are ready, open the first entry from the contents.
