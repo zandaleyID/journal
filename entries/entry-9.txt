@@ -1,12 +1,12 @@
-title: Guide the Process, Leave the Meaning Open
-short-title: Guide the Process
+title: Who Holds the Scaffold?
+short-title: Who Holds the Scaffold
 number: 8
-subtitle: What my feedback design, and what I left out of it, taught me about my philosophy of multimodal design • 14 October 2026
+subtitle: What my feedback design taught me about the role of feedback in learning, and what I left out • 14 October 2026
 banner: assets/banner-entry-9.jpg
 banner-alt: The word "scaffold" in cut-out magazine letters over a colourful mural. A worker in a hi-vis vest stands on scaffolding in front of the mural, and a pink flower with a ladybug and a hand holding a paintbrush sits at the right.
 banner-caption: Entry 8 banner (add your image credits here, Bothma, 2026).
 ---
-This entry picks up where Entry 7 left off. It looks at what the feedback structure in my PP2 design taught me, and it finishes with how my philosophy of multimodal design is evolving.
+This entry looks at how I scaffolded feedback in my PP2 design, what I left out, and how the Unit 4 capstone guides the process while leaving the meaning open for facilitators.
 
 ## Who gives the feedback?
 In PP2, the procedural task in Unit 1 gets immediate AI-generated feedback, which gives formative knowledge without overloading human reviewers. Units 2 to 4 need analysis and authentic evaluation, so a human reviewer gives qualitative feedback.
@@ -20,19 +20,15 @@ caption: Table 1. Who gives feedback in each unit of my PP2 design (Bothma, 2026
 | Unit 4 | Task Design Worksheet and reflective commentary | Confirms completion | Feedback on a personal, identity-related task |
 [/table]
 
-One reason I chose to structure feedback this way is due to learner perception. Wang et al. (2013) found that students adjust their learning approaches in response to the teaching and learning environment. My own inference is that a high-stakes task given automated feedback might not feel 'high-stakes'. Another reason concerns the identity and nuance facilitators need from a person, and the respect and safety of human feedback where it is due.
-
-Looking at this through the Community of Inquiry, deciding who gives which feedback, and when, is teaching presence, including the design, facilitation and direction of the course (Anderson et al., 2001, cited in Bosch, Laubscher and Olivier, 2020, p. 56).
+One reason for this feedback structure was learner perception. Wang et al. (2013) found that students adapt their learning approaches in response to the teaching and learning environment. I inferred that automated feedback on a high-stakes task might make the assessment feel less significant. I also considered the personal insight and nuance facilitators need from human feedback, particularly when respect and psychological safety are important. Additionally, through the Community of Inquiry framework, deciding who provides feedback and when is also part of teaching presence, which includes the design, facilitation, and direction of the course (Anderson et al., 2001, cited in Bosch, Laubscher and Olivier, 2020, p. 56).
 
 ## What I left out
-What I never specified is what facilitators do with human feedback once they have it. I assumed it would help them with the next unit or correct what they had misunderstood. If feedback is going to be an active part of learning, they need something of value to do with it. If I had to change this, the lightest version I can think of is a low-stakes response to feedback could be integrated within the ungraded reflective journal. It wouldn't add to their load, because it belongs to their own exploration of the identity shift and is not another graded requirement.
+What I never specified was how facilitators would use the human feedback they received. I assumed it would inform their work in the next unit or help correct misunderstandings, but feedback needs to lead to some form of action to become an active part of learning (Biggs and Tang, 2007). A simple improvement would be to add a low-stakes feedback response to the ungraded reflective journal. This would give facilitators an opportunity to engage with the feedback without adding another graded task or increasing their workload, because it belongs to their own exploration of the identity shift.
 
 I also see now that the agent works as a collaborator, since facilitators can use it to discuss theories, test assumptions, and brainstorm. I intended that, but I didn't make it explicit in the wireframe.
 
-## My philosophy so far
-The idea that has stuck with me most is affordance. You can choose a tool or mode intending one kind of engagement, but that affordance is wasted unless you guide learners to use it the way you meant (Day and Lloyd, 2007). At the same time, learners interpret modes differently, and that can be a strength, because it gives them more than one way of engaging with a task (Kress et al., 2014; Ralabate, 2011).
-
-The Unit 4 capstone is where I balance these two aspects. Facilitators use a worksheet to design an open-ended learning task of their own, and then record a short reflective commentary on their design choices. The screen below is annotated to show which parts are fixed and which are left open.
+## Guiding the process, leaving the meaning open
+Thinking about what facilitators do with feedback, and how the agent supports them, led me to the Unit 4 capstone, which is where I most deliberately balance structure with freedom. Facilitators use a worksheet to design an open-ended learning task of their own, and then record a short reflective commentary on their design choices. The screen below is annotated to show which parts are fixed and which are left open.
 
 [figure]
 image: assets/unit4-worksheet-annotated.png
@@ -41,7 +37,8 @@ caption: Figure 1. The Unit 4 Task Design Worksheet and Reflective Commentary sc
 description: The worksheet has six fields. Two fix the structure: field 4, where the AI-free and AI-mediated phases sit, and field 6, one hold-back moment and why it is there. Four are left to the facilitator: the task title, the learning goal, the student scenario and the example prompt types. In the reflective commentary that follows, the facilitator also chooses whether to respond in writing, audio or video. Facilitators can ask the agent for help with any field.
 [/figure]
 
-The worksheet fixes the structure through fields 4 and 6, consisting of an AI-free entry zone before any AI interaction, and at least one deliberate moment where direct expert answers are held back. This is to prevent facilitators from falling back on familiar answer-checking habits under pressure. Everything else is up to their own discretion; the subject and scenario (fields 1 to 3), where cognitive friction happens and how they frame the Socratic prompts, whether they respond in writing, audio or video, and what the shift from content deliverer to cognitive orchestrator means for them (Vendrell and Johnston, 2026). This guides the process and leaves the content and the meaning open. The first protects the pedagogy and keeps the load manageable, and the second respects facilitators as professionals.
+## Final thoughts
+Looking at the feedback structure and the Unit 4 worksheet together, I see the same decision. In both, I guide the process by choosing who gives feedback and when and by building in a moment where direct answers are held back, and I leave the meaning open to the facilitators, including what the shift from content deliverer to cognitive orchestrator means for them (Vendrell and Johnston, 2026). Guiding the process protects the pedagogy and keeps the load manageable, while leaving the meaning open respects facilitators as professionals. What I left out, a place for facilitators to use their feedback, showed me that structure only supports learning when it leads somewhere. I want to carry that into my future designs.
 
 [question]
 text: When you get feedback on your work, what do you do with it? Does the course give you somewhere to put it?
@@ -49,11 +46,12 @@ reply: Thank you for sharing. Feedback only helps once there is somewhere for it
 [/question]
 
 [references]
-Anthropic, 2026. Claude (Sonnet 5.5) [Large language model]. Available at: https://claude.ai [Accessed 14 October 2026].
+[references]
+Anderson, T., Rourke, L., Garrison, D.R. and Archer, W., 2001. Assessing teaching presence in a computer conferencing context. *Journal of Asynchronous Learning Networks*, [e-journal] 5(2), pp.1-17.
+Anthropic, 2026. *Claude* (Sonnet 5.5) [Large language model]. Available at: <https://claude.ai> [Accessed 14 October 2026].
+Biggs, J. and Tang, C., 2007. *Teaching for quality learning at university: What the student does*. [e-book] 3rd ed. Maidenhead: Open University Press. Available at: <https://www.academia.edu/39702208/Teaching_for_Quality_Learning_at_University> [Accessed 21 September 2026].
 Bosch, C., Laubscher, D. and Olivier, J., 2020. The affordances of the Community of Inquiry framework for self-directed blended learning in South African research. In: J. Olivier, ed. 2020. *Self-directed multimodal learning in higher education*. Cape Town: AOSIS. pp.51-92.
-Day, D. and Lloyd, M., 2007. Affordances of online technologies: More than the properties of the technology. *Australian Educational Computing*, [e-journal] 22(2), pp.17-21. Available at: <https://www.researchgate.net/publication/27476254_Affordances_of_online_technologies_More_than_the_properties_of_the_technology> [Accessed 18 August 2026].
-Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teaching and learning: The rhetorics of the science classroom*. [e-book] London: Routledge. Available at: <https://www.academia.edu/27773901/Multimodal_Teaching_and_Learning_The_Rhetorics_of_the_Science_Classroom> [Accessed 18 September 2026].
-Ralabate, P.K., 2011. Universal Design for Learning: Meeting the needs of all students. *The ASHA Leader*, [e-journal] 16(10), pp.14-17. doi:10.1044/leader.FTR2.16102011.14.
 Vendrell, M. and Johnston, S.K., 2026. Scaffolding critical thinking with generative AI: Design principles for integrating large language models in higher education. *Computers and Education: Artificial Intelligence*, [e-journal]. doi:10.1016/j.caeai.2026.100572.
-Wang, X., Su, Y., Cheung, S., Wong, E. and Kwong, T., 2013. An exploration of Biggs' constructive alignment in course design and its impact on students' learning approaches. *Assessment & Evaluation in Higher Education*, [e-journal] 38(4), pp.477-491. doi:10.1080/02602938.2012.658018.
+Wang, X., Su, Y., Cheung, S., Wong, E., and Kwong, T., 2013. An exploration of Biggs' constructive alignment in course design and its impact on students' learning approaches. *Assessment & Evaluation in Higher Education*, [e-journal] 38(4), pp.477-491. doi:10.1080/02602938.2012.658018.
+[/references]
 [/references]
