@@ -5,7 +5,7 @@ banner: assets/banner-entry-5.jpg
 banner-alt: The word "constraints" in cut-out magazine letters over a collage of green and blue watercolour mountains. A blue and gold macaw is caught inside a large domed metal birdcage in the centre, while a swallow, a bee with feathered wings, a sun, blue butterflies and a flying saucer sit outside it.
 banner-caption: Entry 4 banner (Bothma, 2026).
 ---
-CoTrace is my conceptual AI learning platform, built on generativist pedagogy and structured around three phases: Explore, Draft and Refine. My Practical Project 2 proposes an orientation programme for newly appointed CoTrace facilitators. This entry began before that proposal was finalised, so some early ideas below differ from what I submitted, and I have mentioned them here to show how my thinking changed. My learner analysis showed three gaps in facilitators' contexts, and I wanted to see how Universal Design for Learning (UDL) could close them.
+CoTrace is my own conceptual AI learning platform, built on generativist pedagogy and structured around three phases: Explore, Draft and Refine. My Practical Project 2 (PP2) proposes an orientation programme for newly appointed CoTrace facilitators who are tasked with guiding students through the platform and its pedagogy. This entry began before that proposal was finalised, so some early ideas differ from what I submitted, and I have mentioned them here to show how my thinking changed. My learner analysis identified three constraints in facilitators’ contexts, and I wanted to explore how Universal Design for Learning (UDL) could help address them.
 
 [embed]
 url: udl-flipcards.html
@@ -16,17 +16,17 @@ description: Three cards, each showing a facilitator gap on the front and a UDL 
 [/embed]
 
 ## Why engagement matters most here
-Of the three principles in the diagram, engagement stood out the most because, beyond technology, the main challenge facilitators potentially face is affective and tied to identity. These experienced educators are being asked to shift from “knowledge deliverer” to “cognitive orchestrator” (Vendrell and Johnston, 2026), giving up the expert role Biggs and Tang (2007) describe, which can threaten their pedagogical agency and leave them unsure of their role.
+Of the three principles in the diagram, engagement stood out the most because, beyond technology, the main challenge facilitators potentially face is affective and tied to identity. These experienced educators are being asked to move from ‘knowledge deliverers’ to ‘cognitive orchestrators’ (Vendrell and Johnston, 2026), stepping away from the expert role described by Biggs and Tang (2007). This shift may challenge their established sense of pedagogical agency and leave them uncertain about their role.
 
-The engagement principle (Ralabate, 2011) responds with a climate of trust, where early errors and technical breakdowns count as learning opportunities (Biggs and Tang, 2007). This is built into the human feedback facilitators receive, which also models how to respond when their own students make mistakes. It also offers tasks tied to facilitators’ real jobs and motivations (Khalil and Elkhider, 2016), so the orientation matters to people who already see themselves as skilled. Both choices reduce the same thing: uncertainty about what their role is now.
+The engagement principle (Ralabate, 2011) responds with a climate of trust, where early errors and technical breakdowns are treated as learning opportunities (Biggs and Tang, 2007). The human feedback facilitators receive reinforces this approach while modelling how they might respond when their own students make mistakes. It also offers tasks tied to facilitators’ real jobs and motivations (Khalil and Elkhider, 2016), making the orientation relevant to educators who already see themselves as skilled. Together, these design choices help reduce uncertainty about their changing role.
 
 ## Action, expression and representation
 Facilitators come from different professional backgrounds, with assessment habits built around judging finished work (Corbin et al., 2025), and one standard assessment could create barriers. UDL’s answer is to let them show competence in different ways (Ralabate, 2011). My early ideas included authoring a Socratic prompt exercise or recording a simulated micro-teaching session.
 
-Representation addresses the digital literacy gap, where AI literacy is likely to be uneven (Ní Uanachain and Aouad, 2025). Dense text would overload less tech-savvy facilitators (Moreno and Mayer, 2007), and it was decided that the design would include short video walkthroughs, visual workflow diagrams, and an on-screen pedagogical agent to guide facilitators.
+Representation addresses the digital literacy gap, where AI literacy is likely to be uneven (Ní Uanachain and Aouad, 2025). Dense text would overload less tech-savvy facilitators (Moreno and Mayer, 2007). The design therefore incorporated short video walkthroughs, visual workflow diagrams, and an on-screen pedagogical agent to guide facilitators.
 
 ## What changed, and why
-My early feedback idea was rich multimodal feedback on a micro-teaching session. However, in the submitted design, facilitators get an automated first pass and a human comment within 24 hours. The reasons for this were due to reviewer workload, the identity and nuance that facilitators need from a person, and the respect and safety of human feedback. The choice of format survived only in Unit 4, where facilitators can submit their commentary as written, audio, or video. That is less than I imagined, but I decided to keep the choice in one unit and make it work rather than try to spread it across all four. This could always be adjusted in future iterations based on facilitator interactions and feedback. 
+My initial idea was to provide rich multimodal feedback on each micro-teaching session. However, in the submitted design, facilitators get an automated first pass and a human comment within 24 hours. This decision reflected practical constraints around reviewer workload, as well as the need for the personal insight, nuance, and sense of safety that human feedback can provide. The choice of format survived only in Unit 4, where facilitators can submit their commentary as written, audio, or video. That is less than I imagined, but I chose to retain the option in one unit and make it work rather than dilute it across all four. Future iterations could expand or adapt this approach based on facilitator interactions and feedback.
 
 [figure]
 image: assets/funnel.gif
@@ -37,7 +37,7 @@ description: Idea 1, rich multimodal feedback, comes out as an automated first p
 [/figure]
 
 ## Final thoughts
-UDL gave me a way to close the gaps I identified, and building the design showed me which of those ideas could survive real constraints. A good design idea has to hold up against workload, time, and the needs of the people using it, and mine did that by being scaled back to what could realistically be delivered. Applying UDL also made me question what happens when its flexibility meets the limits CTML places on cognitive load. That is where my next entry begins.
+UDL gave me a framework for addressing the identified constraints, while developing the design showed me which ideas were feasible in practice. A good design idea has to hold up against workload, time, and the needs of the people using it. Mine did that, although it had to be scaled back to what could realistically be delivered. Applying UDL also made me question what happens when its flexibility meets the limits CTML places on cognitive load. That is where my next entry begins.
 
 [question]
 text: Think of a course you have taken. Could you choose how to learn the material, or how to show what you knew? Did having that choice, or not having it, change how motivated you felt?
