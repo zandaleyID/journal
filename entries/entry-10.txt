@@ -16,6 +16,15 @@ description: A paper-cut collage board starts empty, with eight dashed, numbered
 [/embed]
 
 ## Looking back and looking ahead
+
+[embed]
+url: reflection-timeline.html
+title: Interactive timeline of how my thinking has changed and what I plan to do next
+size: timeline
+caption: Figure 2. How my thinking has changed, and where I plan to go next. Select a stop to read it. Designed by me and generated with Claude (Anthropic, 2026).
+description: A timeline of eight numbered stops. Looking back, in pink: 1, a rigid process, seeing instructional design as theory and frameworks first; 2, theory first, which still makes a design defensible; 3, getting creative with the facilitator's experience in Practical Project 2; 4, creativity guided by empathy, scaling the design back so it is achievable. Now, in yellow: 5, design that evolves, tested early with feedback and iteration. Looking ahead, in teal with a dashed line: 6, build one CoTrace unit in Moodle or Articulate Rise; 7, eventually test CoTrace with facilitators before any students; 8, use AI tools fully while keeping human creativity and empathy at the centre. Selecting a stop opens a short sentence about it.
+[/embed]
+
 When this module began, I saw instructional design as a rigid process. Feeling quite out of my depth, I prioritised learning the theories, applying the frameworks, assuming the designing would follow naturally. That view isn't entirely wrong, because the theory is what makes a design defensible. Letting myself get creative with the facilitator’s experience produced many ideas, and putting myself in their shoes showed me that they would add up to an overwhelming programme. Making the design realistically achievable was not a loss of creativity. It was creativity guided by empathy.
 
 If one idea holds this collage up, I think it is evolution. Iteration is part of it, but evolution describes how something can start in one place and end somewhere quite different and unexpected. You look at it from new angles and add pieces you never planned to add. My PP2 design evolved like that, and so did this journal. I expect that any instructional design work I do in the future will evolve in the same way.
