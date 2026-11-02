@@ -183,3 +183,5 @@ details p { margin: .5em 0 .2em; }
 .tablefig thead th { background: var(--accent-soft, rgba(91,71,157,.14)); font-weight: 700; }
 .tablefig tbody tr:last-child th, .tablefig tbody tr:last-child td { border-bottom: 0; }
 .tablefig tbody th { font-weight: 700; white-space: nowrap; }
+.embed.timeline { height: 520px; }
+@media (max-width: 660px) { .embed.timeline { height: 720px; } }
