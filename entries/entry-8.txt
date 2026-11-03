@@ -35,9 +35,9 @@ Final thoughts
 Looking back, building the wireframe made the learning path explicit for facilitators, and it also showed me that I had already walked a similar path myself. I needed practical competence in Whimsical before I could focus on the design, just as facilitators build practical competence in Unit 1 before moving on to the pedagogy. Moving forward, I will treat that order, practical competence first and pedagogical thinking second, as a deliberate design decision. It resembles the pre-training principle in CTML, where learners cope better with a lesson once they already know its key components (Mayer, 2024).
 
 [question]
-   text: Think of the last tool or platform you had to learn. Did you need to get comfortable with it before you could focus on what you actually wanted to do?
-   reply: Thank you for sharing. Getting comfortable with a tool first is often what makes room for the real thinking.
-   [/question]
+text: What is the best way for you to learn a new tool: a detailed tutorial or exploring it yourself?
+reply: Thank you for sharing. Neither is wrong, and the answer often depends on the tool, which is why I wanted facilitators to have a walkthrough before moving on to the pedagogy.
+[/question]
 
 [references]
 Anthropic, 2026. Claude (Sonnet 5.5) [Large language model]. Available at: https://claude.ai [Accessed 13 October 2026].
