@@ -5,17 +5,15 @@ banner: assets/banner-entry-1.jpg
 banner-alt: The word "becoming" in cut-out magazine letters over a vintage-toned collage. Pale mannequin figures sit and stand on pink stepped terraces of grass, with sunflowers, orange butterflies and a moon around them, and a figure with butterfly wings sits at the upper right.
 banner-caption: Entry 1 banner (Samulska, 2026; Bothma, 2026).
 ---
-Over the course of this module, I've become increasingly interested in the creative side of this field. Instructional design is far more creative than it first appears. Creativity shapes every decision about how meaning gets communicated. Multimodality is where I see that most clearly. Choosing text, image, audio, video, or interaction isn't a neutral technical step. Each mode carries meaning differently, and learners read them differently, so every choice is a design judgement, beyond a simple formula (Kress et al., 2014).
-
-This journal's collage theme is intentional. Instructional design can seem like it's all rigid frameworks and models, but underneath that, it is a deeply iterative process. A collage works like multimodal design: separate pieces, each in its own mode, arranged and rearranged until together they make meaning. Layered, developing, and not fully resolved, reflects what this journal is: a record of expressions and reflections in progress. Nothing here is meant to be a final thought. It's me working through my own design identity, the same way I'd want any learner to have room to work through theirs.
 
 ## Introduction video
 [video]
 file: video/introduction.mp4
+poster: video/introduction-poster.jpg
 captions: video/introduction.vtt
 title: Introduction video: I introduce myself and this journal
-caption: Introduction video.
-transcript:
+caption: Introduction video (Bothma, 2026)
+transcript: Hi, I’m Zan. Welcome to my multimodal journal, which I created for my postgraduate diploma in instructional design. It follows how my thinking changed as I worked with theories of multimedia learning, universal design and instructional design frameworks over the last year. I’ve become really interested in the creative side of this field. I consider myself a creative person, and instructional design turned out to be far more creative than it first appeared to me. Beyond the important theory that underpins instructional design, creativity and empathy also shape every decision about how meaning gets communicated. And multimodality is where I see that most clearly. Each mode has its own strengths, and learners read them differently, which makes human-centred design so important, more than just following a simple formula. There’s a reason for the collage theme you’ll see throughout this journal. I think a collage works the same way as multimodal instructional design. It’s made of separate pieces, arranged and rearranged until together they tell one story. It’s layered, developing and never fully resolved, and nothing here is meant to be a final thought either. It’s simply me working through my own design identity, the same way I’d want any learner to have room to work through theirs. Thanks for joining me, and I hope you enjoy exploring. **On screen:** Zan speaks to camera in a pink checked shirt against a crumpled cream-paper collage background with a flower, a butterfly and a ladybird. Collage cut-outs appear on the left as she talks: her name in ransom-note letters, a brain with a plant, stickers labelled CTML + CATLM, UDL, Bloom’s, TPACK and SAMR, statues, a lightbulb, a hand holding a heart, an ear, eyes and an open mouth, and a butterfly.
 [/video]
 
 [references]
@@ -23,6 +21,7 @@ Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teachin
 [/references]
 
 [image-references]
+Bothma, Z.M., 2026. MMJ Intro Video, Canva [video] Available at: <https://canva.link/pza3h96v2sq02a5> [Accessed 4 November 2026]. 
 Samulska, A., 2026. *The Feeling You Get (Empire of the Sun)*. [digital image] Dribbble. Available at: <https://dribbble.com/shots/26814370-The-Feeling-You-Get-Empire-of-the-Sun> [Accessed 27 October 2026].
 wrapito, 2026. *Retro Surreal Collage Pages: Mixed Media Junk Journal*. [digital image] Available at: <https://www.etsy.com/listing/4295424460/retro-surreal-collage-pages-mixed-media> [Accessed 11 August 2026].
 [/image-references]
