@@ -5,7 +5,6 @@ banner: assets/banner-entry-1.jpg
 banner-alt: The word "becoming" in cut-out magazine letters over a vintage-toned collage. Pale mannequin figures sit and stand on pink stepped terraces of grass, with sunflowers, orange butterflies and a moon around them, and a figure with butterfly wings sits at the upper right.
 banner-caption: Entry 1 banner (Samulska, 2026; Bothma, 2026).
 ---
-
 ## Introduction video
 [video]
 file: video/introduction.mp4
