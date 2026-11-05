@@ -46,6 +46,7 @@ reply: Thank you for sharing. When help is there for the choosing, it can feel q
 [references]
 Anthropic, 2026. Claude (Sonnet 5.5) [Large language model]. Available at: https://claude.ai [Accessed 28 September].
 Day, D. and Lloyd, M., 2007. Affordances of online technologies: More than the properties of the technology. *Australian Educational Computing*, [e-journal] 22(2), pp.17-21. Available at: <https://www.researchgate.net/publication/27476254_Affordances_of_online_technologies_More_than_the_properties_of_the_technology> [Accessed 20 September 2026].
+Ertmer, P.A. and Newby, T.J., 2013. Behaviorism, cognitivism, constructivism: Comparing critical features from an instructional design perspective. Performance Improvement Quarterly, [e-journal] 26(2), pp.43-71. doi:10.1002/piq.21143.
 Garner, R., Gillingham, M. G., & White, C. S. 1989. Effects of “seductive details” on macroprocessing and microprocessing in adults and children. Cognition and Instruction, 6, 41–57.
 Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teaching and learning: The rhetorics of the science classroom*. [e-book] London: Routledge. Available at: <https://www.academia.edu/27773901/Multimodal_Teaching_and_Learning_The_Rhetorics_of_the_Science_Classroom> [Accessed 18 September 2026].
 Moreno, R. and Mayer, R., 2007. Interactive multimodal learning environments. *Educational Psychology Review*, [e-journal] 19(3), pp.309-326. doi:10.1007/s10648-007-9047-2.
