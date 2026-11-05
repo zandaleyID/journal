@@ -1,9 +1,6 @@
 title: A Designer in the Making
 number: 1
 subtitle: Introduction
-banner: assets/banner-entry-1.jpg
-banner-alt: The word "becoming" in cut-out magazine letters over a vintage-toned collage. Pale mannequin figures sit and stand on pink stepped terraces of grass, with sunflowers, orange butterflies and a moon around them, and a figure with butterfly wings sits at the upper right.
-banner-caption: Entry 1 banner (Samulska, 2026; Bothma, 2026).
 ---
 ## Introduction video
 [video]
@@ -20,6 +17,3 @@ Kress, G., Jewitt, C., Ogborn, J. and Tsatsarelis, C., 2014. *Multimodal teachin
 
 [image-references]
 Bothma, Z.M., 2026. MMJ Intro Video, Canva [video] Available at: <https://canva.link/pza3h96v2sq02a5> [Accessed 4 November 2026]. 
-Samulska, A., 2026. *The Feeling You Get (Empire of the Sun)*. [digital image] Dribbble. Available at: <https://dribbble.com/shots/26814370-The-Feeling-You-Get-Empire-of-the-Sun> [Accessed 27 October 2026].
-wrapito, 2026. *Retro Surreal Collage Pages: Mixed Media Junk Journal*. [digital image] Available at: <https://www.etsy.com/listing/4295424460/retro-surreal-collage-pages-mixed-media> [Accessed 11 August 2026].
-[/image-references]
