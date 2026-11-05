@@ -22,7 +22,7 @@ The course's Critical Thinking Framework (CTF) presented the reverse problem, wi
 [figure]
 image: assets/ctf-in-practice.png
 alt: An infographic titled "The CTF in Practice" with the question "When an AI tool tells you what your sources say, how do you decide whether to believe it?" A winding road passes five numbered map pins: 1 Recognise Assumptions, 2 Question Evidence, 3 Justify, 4 Compare Perspectives and 5 Assess Consequences. Each pin has a guiding question and a short note on what I did. A banner at the bottom asks which step of the CTF comes most naturally to you.
-caption: Figure 2. The Critical Thinking Framework in practice, showing how I checked an AI inference against my sources (Bothma, 2026).
+caption: Figure 1. The Critical Thinking Framework in practice, showing how I checked an AI inference against my sources (Bothma, 2026).
 description: Step 1, Recognise Assumptions ("What am I taking for granted?"): I assumed NotebookLM's inference completely matched my sources. Step 2, Question Evidence ("What do I actually know?"): I went back to the source text to see how it reached that inference. Step 3, Justify ("Why would this option work?"): I asked whether the text supports my argument for this assignment. Step 4, Compare Perspectives ("How do the options compare?"): I compared its reading, my reading and my discussion with Claude. Step 5, Assess Consequences ("What happens if I choose it?"): accepting it would weaken my argument, so I wrote a sharper prompt as a filter. The closing question reads: "Which step of the CTF comes most naturally to you?"
 [/figure]
 
