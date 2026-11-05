@@ -11,7 +11,7 @@ I'm doing an online course, and an interactive activity asks for my own take on 
 [embed]
 url: https://drive.google.com/file/d/1_FgL4CrzOgsoOWlP8LgyquSx9Tw1rQqm/view?usp=drive_link
 title: Lost in Transcription, a short animated video
-caption: Figure 1. "Lost in Transcription": a learner answers an AI tool's question via voice function. Created in Powtoon (Bothma, 2026).
+caption: Video. "Lost in Transcription": a learner answers an AI tool's question via voice function. Created in Powtoon (Bothma, 2026).
 description: A learner answers an AI tool's question via voice function. The tool mishears them, asks them to repeat it, and mishears again, until the learner gives up out of frustration. The video is titled "Lost in Transcription" and runs for 54 seconds.
 [/embed]
 
