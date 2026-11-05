@@ -1,6 +1,5 @@
 title: A Designer in the Making
 number: 1
-subtitle: Introduction
 ---
 ## Introduction video
 [video]
